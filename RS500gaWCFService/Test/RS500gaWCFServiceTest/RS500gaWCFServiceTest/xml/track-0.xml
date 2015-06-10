@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding='UTF-8' standalone="yes"?>
+<plist version="1.0">
+  <dict>
+    <key>Major Version</key><integer>1</integer>
+    <key>Minor Version</key><integer>1</integer>
+    <key>Application Version</key><string>7.6.1</string>
+    <key>Tracks</key>
+    <dict>
+		<key>0</key>
+		<dict>
+			<key>Track ID</key><integer>0</integer>
+			<key>Name</key><string>Sgt. Pepper&apos;s Lonely Hearts Club Band</string>
+			<key>Artist</key><string>The Beatles</string>
+			<key>Album Artist</key><string>The Beatles</string>
+			<key>Album</key><string>001 # Sgt. Peppers Lonely Hearts Club Band</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>13412324</integer>
+			<key>Total Time</key><integer>122000</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>1967</integer>
+			<key>Date Modified</key><date>2015-02-01T04:04:00Z</date>
+			<key>Date Added</key><date>2015-03-20T15:39:37Z</date>
+			<key>Bit Rate</key><integer>860</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C001%20%23%201967%20-%20The%20Beatles%20-%20Sgt.%20Peppers%20Lonely%20Hearts%20Club%20Band%5C01%20Sgt.%20Pepper%27s%20Lonely%20Hearts%20Club%20Band.m4a</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+    </dict>
+  </dict>
+</plist>

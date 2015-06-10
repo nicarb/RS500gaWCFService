@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (c) 2007, Burnham H. Greeley
+* All rights reserved.
+*
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are met:
+*     * Redistributions of source code must retain the above copyright
+*       notice, this list of conditions and the following disclaimer.
+*     * Redistributions in binary form must reproduce the above copyright
+*       notice, this list of conditions and the following disclaimer in the
+*       documentation and/or other materials provided with the distribution.
+*     * Neither the name of any organization nor the
+*       names of its contributors may be used to endorse or promote products
+*       derived from this software without specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY Burnham H. Greeley ``AS IS'' AND ANY
+* EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+* DISCLAIMED. IN NO EVENT SHALL Burnham H. Greeley BE LIABLE FOR ANY
+* DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+* ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+* (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="plist">
+    <xs:complexType>
+    <xs:sequence>
+      <xs:element name="dict">
+        <xs:complexType>
+		<xs:element name="key" value="Major Version" minOccurs="0" maxOccurs="1" type="xs:string" />
+		<xs:element name="integer" minOccurs="0" maxOccurs="1" type="xs:integer" />
+		<xs:element name="key" value="Minor Version" minOccurs="0" maxOccurs="1" type="xs:string" />
+		<xs:element name="integer" minOccurs="0" maxOccurs="1" type="xs:integer" />
+		<xs:element name="key" value="Application Version" minOccurs="0" maxOccurs="1" type="xs:string" />
+		<xs:element name="integer" minOccurs="0" maxOccurs="1" type="xs:integer" />
+		<xs:element name="key" value="Tracks" minOccurs="0" maxOccurs="1" type="xs:string" />
+        <xs:sequence>
+          <xs:element name="dict" minOccurs="0" maxOccurs="unbounded">
+		  <xs:element name="key" minOccurs="0" maxOccurs="1" type="xs:integer" />
+		  <xs:element name="dict" minOccurs="0" maxOccurs="1">
+            <xs:complexType>
+              <xs:element name="key" value="Track ID" type="xs:string">
+			  </xs:element>
+              <xs:element name="integer" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Name" type="xs:string">
+			  </xs:element>
+              <xs:element name="key" value="Artist" minOccurs="0" maxOccurs="1" type="xs:string">
+			  </xs:element>
+              <xs:element name="key" value="Album Artist" minOccurs="0" maxOccurs="1" type="xs:string">
+			  </xs:element>
+              <xs:element name="key" value="Album" minOccurs="0" maxOccurs="1" type="xs:string">
+			  </xs:element>
+              <xs:element name="key" value="Genre" minOccurs="0" maxOccurs="1" type="xs:string">
+			  </xs:element>
+              <xs:element name="key" value="Kind" minOccurs="0" maxOccurs="1" type="xs:string">
+			  </xs:element>
+              <xs:element name="key" value="Size" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="integer" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Total Time" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="integer" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Track Number" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="integer" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Year" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="integer" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Date Modified" minOccurs="0" maxOccurs="1" type="xs:date">
+			  </xs:element>
+              <xs:element name="key" value="Date Added" minOccurs="0" maxOccurs="1" type="xs:date">
+			  </xs:element>
+              <xs:element name="key" value="Bit Rate" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Disc Number" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Disc Count" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Track Count" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Location" minOccurs="0" maxOccurs="1" type="xs:string">
+			  </xs:element>
+              <xs:element name="key" value="File Folder Count" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+              <xs:element name="key" value="Library Folder Count" minOccurs="0" maxOccurs="1" type="xs:integer">
+			  </xs:element>
+            </xs:complexType>
+		   </xs:element>
+          </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="plist">
+        <xs:complexType>
+        <xs:sequence>
+          <xs:element name="list" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" />
+              <xs:element name="Track ID" minOccurs="0" maxOccurs="unbounded" type="xs:integer" />
+            </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,1 @@
+D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\RS500gaWCFServiceTest.csproj;neutral

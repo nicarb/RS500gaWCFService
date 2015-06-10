@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="plist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dict">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:element type="xs:string" name="key"/>
+              <xs:element type="xs:string" name="integer"/>
+              <xs:element type="xs:string" name="string"/>
+              <xs:element name="dict">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:int" name="key"/>
+                    <xs:element name="dict">
+                      <xs:complexType mixed="true">
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:string" name="key"/>
+                          <xs:element type="xs:string" name="integer"/>
+                          <xs:element type="xs:string" name="string"/>
+                          <xs:element type="xs:string" name="date"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:float" name="version"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

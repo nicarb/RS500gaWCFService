@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding='UTF-8' standalone="yes"?>
+<plist version="1.0">
+  <dict>
+    <key>Major Version</key>
+	<integer>1</integer>
+    <key>Minor Version</key>
+	<integer>1</integer>
+    <key>Application Version</key>
+	<string>7.6.1</string>
+    <key>Tracks</key>
+    <dict>
+      <key>90</key>
+      <dict>
+        <key>Track ID</key><integer>90</integer>
+        <key>Name</key><string>London Calling</string>
+        <key>Artist</key><string>The Clash</string>
+        <key>Album Artist</key><string>The Clash</string>
+        <key>Album</key><string>008 # London Calling</string>
+        <key>Genre</key><string>Punk Rock</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>24930967</integer>
+        <key>Total Time</key><integer>203000</integer>
+        <key>Track Number</key><integer>1</integer>
+        <key>Year</key><integer>1979</integer>
+        <key>Date Modified</key><date>2015-02-14T17:17:11Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:39Z</date>
+        <key>Bit Rate</key><integer>966</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>19</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C008%20%23%201979%20-%20The%20Clash%20-%20London%20Calling%5C01%20London%20Calling.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+    </dict>
+  </dict>
+</plist>

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="nevermindXmlContent" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding='UTF-8' standalone="yes"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Major Version&lt;/key&gt;
+	&lt;integer&gt;1&lt;/integer&gt;
+    &lt;key&gt;Minor Version&lt;/key&gt;
+	&lt;integer&gt;1&lt;/integer&gt;
+    &lt;key&gt;Application Version&lt;/key&gt;
+	&lt;string&gt;7.6.1&lt;/string&gt;
+    &lt;key&gt;Tracks&lt;/key&gt;
+    &lt;dict&gt;
+	  &lt;key&gt;223&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;223&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Smells Like Teen Spirit&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;37185475&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;301000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T15:48:25Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;977&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C01%20Smells%20Like%20Teen%20Spirit.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;224&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;224&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;In Bloom&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;32391139&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;254000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;2&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T18:41:19Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;1004&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C02%20In%20Bloom.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;225&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;225&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Come As You Are&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;25915417&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;219000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;3&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T23:29:23Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;932&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C03%20Come%20As%20You%20Are.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;226&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;226&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Breed&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;23226928&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;183000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;4&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T05:07:41Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;994&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C04%20Breed.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;227&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;227&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Lithium&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;30276531&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;257000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;5&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T20:31:37Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;930&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C05%20Lithium.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;228&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;228&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Polly&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;16064370&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;177000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;6&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-09T19:22:10Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;708&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C06%20Polly.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;229&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;229&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Territorial Pissings&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;18137165&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;143000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;7&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-07T19:53:41Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;992&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C07%20Territorial%20Pissings.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;230&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;230&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Drain You&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;27686035&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;223000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;8&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-13T13:46:42Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;975&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C08%20Drain%20You.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;231&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;231&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Lounge Act&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;19078696&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;156000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;9&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T23:15:41Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;954&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C09%20Lounge%20Act.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;232&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;232&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Stay Away&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;25645007&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;212000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-02T02:10:05Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;951&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C10%20Stay%20Away.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;233&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;233&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;On A Plain&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;23903683&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;196000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;11&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T18:53:21Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;958&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C11%20On%20A%20Plain.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;234&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;234&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Something In The Way / Endless, Nameless [Hidden Track]&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Nirvana&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;017 # Nevermind&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Grunge&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;66787473&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;1235000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1991&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T21:24:54Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:41Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;429&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;12&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C12%20Something%20In%20The%20Way%20-%20Endless%2C%20Nameless%20%5BHidden%20Track%5D.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+	&lt;/dict&gt;
+  &lt;/dict&gt;
+&lt;/plist&gt;</value>
+  </data>
+  <data name="Track-ID-0" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding='UTF-8' standalone="yes"?&gt;
+&lt;plist version="1.0"&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Major Version&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+    &lt;key&gt;Minor Version&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+    &lt;key&gt;Application Version&lt;/key&gt;&lt;string&gt;7.6.1&lt;/string&gt;
+    &lt;key&gt;Tracks&lt;/key&gt;
+    &lt;dict&gt;
+		&lt;key&gt;0&lt;/key&gt;
+		&lt;dict&gt;
+			&lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;0&lt;/integer&gt;
+			&lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Sgt. Pepper&amp;apos;s Lonely Hearts Club Band&lt;/string&gt;
+			&lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;The Beatles&lt;/string&gt;
+			&lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;The Beatles&lt;/string&gt;
+			&lt;key&gt;Album&lt;/key&gt;&lt;string&gt;001 # Sgt. Peppers Lonely Hearts Club Band&lt;/string&gt;
+			&lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Rock&lt;/string&gt;
+			&lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+			&lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;13412324&lt;/integer&gt;
+			&lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;122000&lt;/integer&gt;
+			&lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+			&lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1967&lt;/integer&gt;
+			&lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-01T04:04:00Z&lt;/date&gt;
+			&lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:39:37Z&lt;/date&gt;
+			&lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;860&lt;/integer&gt;
+			&lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+			&lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+			&lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;13&lt;/integer&gt;
+			&lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C001%20%23%201967%20-%20The%20Beatles%20-%20Sgt.%20Peppers%20Lonely%20Hearts%20Club%20Band%5C01%20Sgt.%20Pepper%27s%20Lonely%20Hearts%20Club%20Band.m4a&lt;/string&gt;
+			&lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+			&lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+		&lt;/dict&gt;
+    &lt;/dict&gt;
+  &lt;/dict&gt;
+&lt;/plist&gt;</value>
+  </data>
+</root>

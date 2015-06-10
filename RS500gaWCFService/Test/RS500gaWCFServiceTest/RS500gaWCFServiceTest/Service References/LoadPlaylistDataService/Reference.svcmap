@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e9639963-aad4-48d2-b6d2-993efce17355" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:31290/WS/LoadPlaylistDataService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LoadPlaylistDataService.xsd" MetadataType="Schema" ID="fb0e034f-56da-4f6f-81d5-23e76750de87" SourceId="1" SourceUrl="http://localhost:31290/WS/LoadPlaylistDataService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoadPlaylistDataService.wsdl" MetadataType="Wsdl" ID="184016eb-1733-4f46-978c-5851164579b9" SourceId="1" SourceUrl="http://localhost:31290/WS/LoadPlaylistDataService.svc?wsdl" />
+    <MetadataFile FileName="LoadPlaylistDataService1.xsd" MetadataType="Schema" ID="18b0e2f7-abaf-47bd-94c4-9676d460cd99" SourceId="1" SourceUrl="http://localhost:31290/WS/LoadPlaylistDataService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

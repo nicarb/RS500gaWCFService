@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="track52" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding='UTF-8' standalone="yes"?&gt;
+&lt;plist version="1.0"&gt;
+  &lt;dict&gt;
+    &lt;key&gt;Major Version&lt;/key&gt;
+    &lt;integer&gt;1&lt;/integer&gt;
+    &lt;key&gt;Minor Version&lt;/key&gt;
+    &lt;integer&gt;1&lt;/integer&gt;
+    &lt;key&gt;Application Version&lt;/key&gt;
+    &lt;string&gt;7.6.1&lt;/string&gt;
+    &lt;key&gt;Tracks&lt;/key&gt;
+    &lt;dict&gt;
+	  &lt;key&gt;1243&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1243&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Tired of Being Alone&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;16399547&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;178000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-13T14:32:52Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;716&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C01%20Tired%20of%20Being%20Alone.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1244&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1244&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Call Me (Come Back Home)&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;17279763&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;191000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;2&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-07T09:57:40Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;705&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C02%20Call%20Me%20%28Come%20Back%20Home%29.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1245&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1245&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;I&amp;apos;m Still In Love With You&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;17489530&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;200000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;3&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T08:17:06Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;683&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C03%20I%27m%20Still%20In%20Love%20With%20You.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1246&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1246&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Here I Am (Come and Take Me)&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;24110838&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;260000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;4&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-12T17:22:57Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;728&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C04%20Here%20I%20Am%20%28Come%20and%20Take%20Me%29.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1247&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1247&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Love and Happiness&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;29608193&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;308000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;5&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T08:37:52Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;757&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C05%20Love%20and%20Happiness.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1248&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1248&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Let&amp;apos;s Stay Together&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;26913022&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;296000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;6&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T23:29:19Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;714&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C06%20Let%27s%20Stay%20Together.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1249&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1249&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;I Can&amp;apos;t Get Next To You&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;22545362&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;236000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;7&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-13T05:39:55Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;748&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C07%20I%20Can%27t%20Get%20Next%20To%20You.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1250&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1250&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;You Ought To Be With Me&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;18905985&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;205000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;8&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-13T13:51:27Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;718&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C08%20You%20Ought%20To%20Be%20With%20Me.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1251&lt;/key&gt;
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1251&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Look What You Done For Me&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;17657338&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;192000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;9&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T23:26:44Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;717&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C09%20Look%20What%20You%20Done%20For%20Me.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+      &lt;key&gt;1252&lt;/key&gt;	
+      &lt;dict&gt;
+        &lt;key&gt;Track ID&lt;/key&gt;&lt;integer&gt;1252&lt;/integer&gt;
+        &lt;key&gt;Name&lt;/key&gt;&lt;string&gt;Let&amp;apos;s Get Married&lt;/string&gt;
+        &lt;key&gt;Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album Artist&lt;/key&gt;&lt;string&gt;Al Green&lt;/string&gt;
+        &lt;key&gt;Album&lt;/key&gt;&lt;string&gt;052 # Greatest Hits&lt;/string&gt;
+        &lt;key&gt;Genre&lt;/key&gt;&lt;string&gt;Фанк/Соул&lt;/string&gt;
+        &lt;key&gt;Kind&lt;/key&gt;&lt;string&gt;MPEG audio file&lt;/string&gt;
+        &lt;key&gt;Size&lt;/key&gt;&lt;integer&gt;23791394&lt;/integer&gt;
+        &lt;key&gt;Total Time&lt;/key&gt;&lt;integer&gt;272000&lt;/integer&gt;
+        &lt;key&gt;Track Number&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Year&lt;/key&gt;&lt;integer&gt;1975&lt;/integer&gt;
+        &lt;key&gt;Date Modified&lt;/key&gt;&lt;date&gt;2015-02-14T09:37:18Z&lt;/date&gt;
+        &lt;key&gt;Date Added&lt;/key&gt;&lt;date&gt;2015-03-20T15:40:03Z&lt;/date&gt;
+        &lt;key&gt;Bit Rate&lt;/key&gt;&lt;integer&gt;685&lt;/integer&gt;
+        &lt;key&gt;Disc Number&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Disc Count&lt;/key&gt;&lt;integer&gt;1&lt;/integer&gt;
+        &lt;key&gt;Track Count&lt;/key&gt;&lt;integer&gt;10&lt;/integer&gt;
+        &lt;key&gt;Location&lt;/key&gt;&lt;string&gt;file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C10%20Let%27s%20Get%20Married.m4a&lt;/string&gt;
+        &lt;key&gt;File Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+        &lt;key&gt;Library Folder Count&lt;/key&gt;&lt;integer&gt;-1&lt;/integer&gt;
+      &lt;/dict&gt;
+    &lt;/dict&gt;
+  &lt;/dict&gt;
+&lt;/plist&gt;</value>
+  </data>
+  <data name="track53" xml:space="preserve">
+    <value />
+  </data>
+</root>

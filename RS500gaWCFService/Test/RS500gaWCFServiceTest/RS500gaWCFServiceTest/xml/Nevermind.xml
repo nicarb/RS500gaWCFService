@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding='UTF-8' standalone="yes"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Major Version</key>
+	<integer>1</integer>
+    <key>Minor Version</key>
+	<integer>1</integer>
+    <key>Application Version</key>
+	<string>7.6.1</string>
+    <key>Tracks</key>
+    <dict>
+	  <key>223</key>
+      <dict>
+        <key>Track ID</key><integer>223</integer>
+        <key>Name</key><string>Smells Like Teen Spirit</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>37185475</integer>
+        <key>Total Time</key><integer>301000</integer>
+        <key>Track Number</key><integer>1</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T15:48:25Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>977</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C01%20Smells%20Like%20Teen%20Spirit.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>224</key>
+      <dict>
+        <key>Track ID</key><integer>224</integer>
+        <key>Name</key><string>In Bloom</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>32391139</integer>
+        <key>Total Time</key><integer>254000</integer>
+        <key>Track Number</key><integer>2</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T18:41:19Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>1004</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C02%20In%20Bloom.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>225</key>
+      <dict>
+        <key>Track ID</key><integer>225</integer>
+        <key>Name</key><string>Come As You Are</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>25915417</integer>
+        <key>Total Time</key><integer>219000</integer>
+        <key>Track Number</key><integer>3</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T23:29:23Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>932</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C03%20Come%20As%20You%20Are.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>226</key>
+      <dict>
+        <key>Track ID</key><integer>226</integer>
+        <key>Name</key><string>Breed</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>23226928</integer>
+        <key>Total Time</key><integer>183000</integer>
+        <key>Track Number</key><integer>4</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T05:07:41Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>994</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C04%20Breed.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>227</key>
+      <dict>
+        <key>Track ID</key><integer>227</integer>
+        <key>Name</key><string>Lithium</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>30276531</integer>
+        <key>Total Time</key><integer>257000</integer>
+        <key>Track Number</key><integer>5</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T20:31:37Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>930</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C05%20Lithium.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>228</key>
+      <dict>
+        <key>Track ID</key><integer>228</integer>
+        <key>Name</key><string>Polly</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>16064370</integer>
+        <key>Total Time</key><integer>177000</integer>
+        <key>Track Number</key><integer>6</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-09T19:22:10Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>708</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C06%20Polly.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>229</key>
+      <dict>
+        <key>Track ID</key><integer>229</integer>
+        <key>Name</key><string>Territorial Pissings</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>18137165</integer>
+        <key>Total Time</key><integer>143000</integer>
+        <key>Track Number</key><integer>7</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-07T19:53:41Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>992</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C07%20Territorial%20Pissings.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>230</key>
+      <dict>
+        <key>Track ID</key><integer>230</integer>
+        <key>Name</key><string>Drain You</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>27686035</integer>
+        <key>Total Time</key><integer>223000</integer>
+        <key>Track Number</key><integer>8</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-13T13:46:42Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>975</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C08%20Drain%20You.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>231</key>
+      <dict>
+        <key>Track ID</key><integer>231</integer>
+        <key>Name</key><string>Lounge Act</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>19078696</integer>
+        <key>Total Time</key><integer>156000</integer>
+        <key>Track Number</key><integer>9</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T23:15:41Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>954</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C09%20Lounge%20Act.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>232</key>
+      <dict>
+        <key>Track ID</key><integer>232</integer>
+        <key>Name</key><string>Stay Away</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>25645007</integer>
+        <key>Total Time</key><integer>212000</integer>
+        <key>Track Number</key><integer>10</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-02T02:10:05Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>951</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C10%20Stay%20Away.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>233</key>
+      <dict>
+        <key>Track ID</key><integer>233</integer>
+        <key>Name</key><string>On A Plain</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>23903683</integer>
+        <key>Total Time</key><integer>196000</integer>
+        <key>Track Number</key><integer>11</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T18:53:21Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>958</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C11%20On%20A%20Plain.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>234</key>
+      <dict>
+        <key>Track ID</key><integer>234</integer>
+        <key>Name</key><string>Something In The Way / Endless, Nameless [Hidden Track]</string>
+        <key>Artist</key><string>Nirvana</string>
+        <key>Album Artist</key><string>Nirvana</string>
+        <key>Album</key><string>017 # Nevermind</string>
+        <key>Genre</key><string>Grunge</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>66787473</integer>
+        <key>Total Time</key><integer>1235000</integer>
+        <key>Track Number</key><integer>12</integer>
+        <key>Year</key><integer>1991</integer>
+        <key>Date Modified</key><date>2015-02-14T21:24:54Z</date>
+        <key>Date Added</key><date>2015-03-20T15:39:41Z</date>
+        <key>Bit Rate</key><integer>429</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>12</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%201%20%281-50%29%20-%20ALAC%5C017%20%23%201991%20-%20Nirvana%20-%20Nevermind%5C12%20Something%20In%20The%20Way%20-%20Endless%2C%20Nameless%20%5BHidden%20Track%5D.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+	</dict>
+  </dict>
+</plist>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding='UTF-8' standalone="yes"?>
+<plist version="1.0">
+  <dict>
+    <key>Major Version</key>
+    <integer>1</integer>
+    <key>Minor Version</key>
+    <integer>1</integer>
+    <key>Application Version</key>
+    <string>7.6.1</string>
+    <key>Tracks</key>
+    <dict>
+	  <key>1243</key>
+      <dict>
+        <key>Track ID</key><integer>1243</integer>
+        <key>Name</key><string>Tired of Being Alone</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>16399547</integer>
+        <key>Total Time</key><integer>178000</integer>
+        <key>Track Number</key><integer>1</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-13T14:32:52Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>716</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C01%20Tired%20of%20Being%20Alone.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1244</key>
+      <dict>
+        <key>Track ID</key><integer>1244</integer>
+        <key>Name</key><string>Call Me (Come Back Home)</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>17279763</integer>
+        <key>Total Time</key><integer>191000</integer>
+        <key>Track Number</key><integer>2</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-07T09:57:40Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>705</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C02%20Call%20Me%20%28Come%20Back%20Home%29.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1245</key>
+      <dict>
+        <key>Track ID</key><integer>1245</integer>
+        <key>Name</key><string>I&apos;m Still In Love With You</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>17489530</integer>
+        <key>Total Time</key><integer>200000</integer>
+        <key>Track Number</key><integer>3</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-14T08:17:06Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>683</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C03%20I%27m%20Still%20In%20Love%20With%20You.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1246</key>
+      <dict>
+        <key>Track ID</key><integer>1246</integer>
+        <key>Name</key><string>Here I Am (Come and Take Me)</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>24110838</integer>
+        <key>Total Time</key><integer>260000</integer>
+        <key>Track Number</key><integer>4</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-12T17:22:57Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>728</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C04%20Here%20I%20Am%20%28Come%20and%20Take%20Me%29.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1247</key>
+      <dict>
+        <key>Track ID</key><integer>1247</integer>
+        <key>Name</key><string>Love and Happiness</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>29608193</integer>
+        <key>Total Time</key><integer>308000</integer>
+        <key>Track Number</key><integer>5</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-14T08:37:52Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>757</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C05%20Love%20and%20Happiness.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1248</key>
+      <dict>
+        <key>Track ID</key><integer>1248</integer>
+        <key>Name</key><string>Let&apos;s Stay Together</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>26913022</integer>
+        <key>Total Time</key><integer>296000</integer>
+        <key>Track Number</key><integer>6</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-14T23:29:19Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>714</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C06%20Let%27s%20Stay%20Together.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1249</key>
+      <dict>
+        <key>Track ID</key><integer>1249</integer>
+        <key>Name</key><string>I Can&apos;t Get Next To You</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>22545362</integer>
+        <key>Total Time</key><integer>236000</integer>
+        <key>Track Number</key><integer>7</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-13T05:39:55Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>748</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C07%20I%20Can%27t%20Get%20Next%20To%20You.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1250</key>
+      <dict>
+        <key>Track ID</key><integer>1250</integer>
+        <key>Name</key><string>You Ought To Be With Me</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>18905985</integer>
+        <key>Total Time</key><integer>205000</integer>
+        <key>Track Number</key><integer>8</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-13T13:51:27Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>718</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C08%20You%20Ought%20To%20Be%20With%20Me.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1251</key>
+      <dict>
+        <key>Track ID</key><integer>1251</integer>
+        <key>Name</key><string>Look What You Done For Me</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>17657338</integer>
+        <key>Total Time</key><integer>192000</integer>
+        <key>Track Number</key><integer>9</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-14T23:26:44Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>717</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C09%20Look%20What%20You%20Done%20For%20Me.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+      <key>1252</key>	
+      <dict>
+        <key>Track ID</key><integer>1252</integer>
+        <key>Name</key><string>Let&apos;s Get Married</string>
+        <key>Artist</key><string>Al Green</string>
+        <key>Album Artist</key><string>Al Green</string>
+        <key>Album</key><string>052 # Greatest Hits</string>
+        <key>Genre</key><string>Фанк/Соул</string>
+        <key>Kind</key><string>MPEG audio file</string>
+        <key>Size</key><integer>23791394</integer>
+        <key>Total Time</key><integer>272000</integer>
+        <key>Track Number</key><integer>10</integer>
+        <key>Year</key><integer>1975</integer>
+        <key>Date Modified</key><date>2015-02-14T09:37:18Z</date>
+        <key>Date Added</key><date>2015-03-20T15:40:03Z</date>
+        <key>Bit Rate</key><integer>685</integer>
+        <key>Disc Number</key><integer>1</integer>
+        <key>Disc Count</key><integer>1</integer>
+        <key>Track Count</key><integer>10</integer>
+        <key>Location</key><string>file://localhost/D:%5CMusic%5CRolling%20Stones%20500%20Greatest%20Albums%20ALAC%20%5BBubanee%5D%5CGreatest%20500%20Albums%20-%20Part%202%20%2851-100%29%20-%20ALAC%5C052%20%23%201975%20-%20Al%20Green%20-%20Greatest%20Hits%5C10%20Let%27s%20Get%20Married.m4a</string>
+        <key>File Folder Count</key><integer>-1</integer>
+        <key>Library Folder Count</key><integer>-1</integer>
+      </dict>
+    </dict>
+  </dict>
+</plist>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="RS500gaWCFService.LoadPlaylistDataService" CodeBehind="LoadPlaylistDataService.svc.cs" %>
