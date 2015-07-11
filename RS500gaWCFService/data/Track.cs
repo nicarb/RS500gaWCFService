@@ -26,6 +26,7 @@ namespace RS500gaWCFService
         private int DiscCount;
         private int TrackCount;
         private string Location;
+        private string CleanLoc;
         private int FileFolderCount;
         private int LibraryFolderCount;
 
@@ -246,6 +247,17 @@ namespace RS500gaWCFService
             set
             {
                 this.Location = value;
+            }
+        }
+        public string CLEAN_LOC
+        {
+            get
+            {
+                return this.CleanLoc;
+            }
+            set
+            {
+                this.CleanLoc = value;
             }
         }
         public int FILE_FOLDER_COUNT

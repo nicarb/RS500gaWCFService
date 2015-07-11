@@ -91,6 +91,7 @@ namespace RS500gaWCFService
                 XPathNavigator node = xpRootNodeIter.Current;
                 locNodeIter = node.Select(Constants.XSD_TAG_DICT);
 
+                int index = 0;
                 while (locNodeIter.MoveNext())
                 {
                     //XPathNodeIterator keynode = locNodeIter.Current.Select(Constants.XSD_TAG_DICT);
@@ -100,9 +101,11 @@ namespace RS500gaWCFService
                     //XPathNodeIterator dictnode = locNodeIter.Current.Select(Constants.XSD_TAG_DICT);
                     //dictnode.MoveNext();
 
-                    int index = -1;
                     Track currTrack = new Track();
                     string albumFullName = string.Empty;
+                    string location = string.Empty;
+                    string cleanLoc = string.Empty;
+
                     newphewNodeIter = locNodeIter.Current.Select(Constants.XSD_TAG_KEY);
 
                     while (newphewNodeIter.MoveNext())
@@ -115,7 +118,7 @@ namespace RS500gaWCFService
                                 if (keyNode.MoveToNext())
                                 {
                                     currTrack.TRACK_ID = keyNode.ValueAsInt;
-                                    index = currTrack.TRACK_ID;
+                                    //index = currTrack.TRACK_ID;
                                 } break;
                             case Constants.XSD_KEY_NAME:
                                 if (keyNode.MoveToNext())
@@ -125,7 +128,6 @@ namespace RS500gaWCFService
                             case Constants.XSD_KEY_ARTIST:
                                 if (keyNode.MoveToNext())
                                 {
-
                                     currTrack.ARTIST = replace_blackListChars(keyNode.Value);
                                 } break;
                             case Constants.XSD_KEY_ALBUM_ARTIST:
@@ -142,11 +144,22 @@ namespace RS500gaWCFService
                             case Constants.XSD_KEY_GENRE:
                                 if (keyNode.MoveToNext())
                                 {
-                                    string genre = keyNode.Value;
+                                    string genre = keyNode.Value.ToLower();
                                     if (genre.Contains(Constants.GENRES_SEPARATOR_1) ||
                                         genre.Contains(Constants.GENRES_SEPARATOR_2))
                                     {
-                                        genre = parseAndTranslateGenres(genre);
+                                        if (Constants.WHITE_LIST_RU_GENRES.Contains(genre))
+                                        {
+                                            genre = Constants.TRANSLATE_RU_EN[genre];
+                                        }
+                                        else if (Constants.WHITE_LIST_EN_GENRES.Contains(genre))
+                                        {
+                                            // genre is already the one we want, except for the fact that we want to avid it to be split or whatever
+                                        }
+                                        else
+                                        {
+                                            genre = parseAndTranslateGenres(genre);
+                                        }
                                     }
                                     currTrack.GENRE = genre;
                                 } break;
@@ -208,8 +221,12 @@ namespace RS500gaWCFService
                             case Constants.XSD_KEY_LOCATION:
                                 if (keyNode.MoveToNext())
                                 {
-                                    string location = replace_blackListChars(keyNode.Value);
+                                    //string location = replace_blackListChars(keyNode.Value);
+                                    //currTrack.LOCATION = location;
+                                    location = keyNode.Value;
                                     currTrack.LOCATION = location;
+                                    cleanLoc = replace_blackListChars(location);
+                                    currTrack.CLEAN_LOC = cleanLoc;
                                 } break;
                             case Constants.XSD_KEY_FILE_FOLDER_COUNT:
                                 if (keyNode.MoveToNext())
@@ -233,7 +250,8 @@ namespace RS500gaWCFService
                     {
                         currTrack.ALBUM = albumFullName;
                     }
-                    tracksDic.Add(index, currTrack);
+                    tracksDic.Add(index++, currTrack);
+
                 }
             }
             catch (Exception ex)
@@ -243,8 +261,10 @@ namespace RS500gaWCFService
                 log.Error(Constants.ERROR_LOADING, ex);
                 retval = "ERROR:" + ex.Message;
             }
-
-            retval = sendDataToDb(tracksDic, libraryTitle);
+            if (string.IsNullOrEmpty(retval) && tracksDic.Count > 0)
+            {
+                retval = sendDataToDb(tracksDic, libraryTitle);
+            }
 
             return retval;
         }
@@ -305,6 +325,7 @@ namespace RS500gaWCFService
                 XPathNavigator node = xpRootNodeIter.Current;
                 locNodeIter = node.Select(Constants.XSD_TAG_DICT);
 
+                int index = 0;
                 while (locNodeIter.MoveNext())
                 {
                     //XPathNodeIterator keynode = locNodeIter.Current.Select(Constants.XSD_TAG_DICT);
@@ -314,9 +335,11 @@ namespace RS500gaWCFService
                     //XPathNodeIterator dictnode = locNodeIter.Current.Select(Constants.XSD_TAG_DICT);
                     //dictnode.MoveNext();
 
-                    int index = -1;
+
                     Track currTrack = new Track();
                     string albumFullName = string.Empty;
+                    string location = string.Empty;
+                    string cleanLoc = string.Empty;
                     newphewNodeIter = locNodeIter.Current.Select(Constants.XSD_TAG_KEY);
 
                     while (newphewNodeIter.MoveNext())
@@ -329,7 +352,7 @@ namespace RS500gaWCFService
                                 if (keyNode.MoveToNext())
                                 {
                                     currTrack.TRACK_ID = keyNode.ValueAsInt;
-                                    index = currTrack.TRACK_ID;
+                                    //index = currTrack.TRACK_ID;
                                 } break;
                             case Constants.XSD_KEY_NAME:
                                 if (keyNode.MoveToNext())
@@ -339,7 +362,7 @@ namespace RS500gaWCFService
                             case Constants.XSD_KEY_ARTIST:
                                 if (keyNode.MoveToNext())
                                 {
-                                    
+
                                     currTrack.ARTIST = replace_blackListChars(keyNode.Value);
                                 } break;
                             case Constants.XSD_KEY_ALBUM_ARTIST:
@@ -356,12 +379,29 @@ namespace RS500gaWCFService
                             case Constants.XSD_KEY_GENRE:
                                 if (keyNode.MoveToNext())
                                 {
-                                    string genre = keyNode.Value;
+                                    string genre = keyNode.Value.ToLower();
                                     if (genre.Contains(Constants.GENRES_SEPARATOR_1) ||
-                                        genre.Contains(Constants.GENRES_SEPARATOR_2))
+                                        genre.Contains(Constants.GENRES_SEPARATOR_2)) // if there are multiple genres
                                     {
+                                        if (Constants.WHITE_LIST_RU_GENRES.Contains(genre))
+                                        {
+                                            genre = Constants.TRANSLATE_RU_EN[genre];
+                                        }
+                                        else if (Constants.WHITE_LIST_EN_GENRES.Contains(genre))
+                                        {
+                                            // genre is already the one we want, except for the fact that we want to avid it to be split or whatever
+                                        }
+                                        else
+                                        {
+                                            genre = parseAndTranslateGenres(genre);
+                                        }
                                         genre = parseAndTranslateGenres(genre);
                                     }
+                                    else if (Constants.TRANSLATE_RU_EN.ContainsKey(genre))
+                                    {
+                                        genre = Constants.TRANSLATE_RU_EN[genre];
+                                    }
+
                                     currTrack.GENRE = genre;
                                 } break;
                             case Constants.XSD_KEY_KIND:
@@ -422,8 +462,12 @@ namespace RS500gaWCFService
                             case Constants.XSD_KEY_LOCATION:
                                 if (keyNode.MoveToNext())
                                 {
-                                    string location = replace_blackListChars(keyNode.Value);
+                                    //string location = replace_blackListChars(keyNode.Value);
+                                    //currTrack.LOCATION = location;
+                                    location = keyNode.Value;
                                     currTrack.LOCATION = location;
+                                    cleanLoc = replace_blackListChars(location);
+                                    currTrack.CLEAN_LOC = cleanLoc;
                                 } break;
                             case Constants.XSD_KEY_FILE_FOLDER_COUNT:
                                 if (keyNode.MoveToNext())
@@ -504,7 +548,8 @@ namespace RS500gaWCFService
         private string parseAndTranslateGenres(string genres)
         {
             string retval = string.Empty;
-            string[] tokens = genres.Split(Constants.GENRES_SEPARATOR_1);
+            char[] separators = new char[Constants.SEPARATORS_COUNT] { Constants.GENRES_SEPARATOR_1, Constants.GENRES_SEPARATOR_2 };
+            string[] tokens = genres.Split(separators);
             foreach (string genre in tokens)
             {
                 if (Constants.TRANSLATE_RU_EN.ContainsKey(genre))
@@ -548,11 +593,33 @@ namespace RS500gaWCFService
 
         private string replace_blackListChars(string source)
         {
-            return source.Replace(Constants.GA_RANK_BLK_LIST_1, Constants.GA_RANK_WHT_LIST_1).
-                          Replace(Constants.GA_RANK_BLK_LIST_2, Constants.GA_RANK_WHT_LIST_2).
-            Replace(Constants.GA_RANK_BLK_LIST_3, Constants.GA_RANK_WHT_LIST_3).
-            Replace(Constants.GA_RANK_BLK_LIST_4, Constants.GA_RANK_WHT_LIST_4).
-            Replace(Constants.GA_RANK_BLK_LIST_5, Constants.GA_RANK_WHT_LIST_5);
+            return source.Replace(Constants.GA_RANK_BLK_INIT_STR, Constants.GA_RANK_WHT_INIT_STR).
+                Replace(Constants.GA_RANK_BLK_LIST_1, Constants.GA_RANK_WHT_LIST_1).
+                Replace(Constants.GA_RANK_BLK_LIST_2, Constants.GA_RANK_WHT_LIST_2).
+                Replace(Constants.GA_RANK_BLK_LIST_3, Constants.GA_RANK_WHT_LIST_3).
+                Replace(Constants.GA_RANK_BLK_LIST_4, Constants.GA_RANK_WHT_LIST_4).
+                Replace(Constants.GA_RANK_BLK_LIST_5, Constants.GA_RANK_WHT_LIST_5).
+                Replace(Constants.GA_RANK_BLK_LIST_6, Constants.GA_RANK_WHT_LIST_6).
+                Replace(Constants.GA_RANK_BLK_LIST_7, Constants.GA_RANK_WHT_LIST_7).
+                Replace(Constants.GA_RANK_BLK_LIST_8, Constants.GA_RANK_WHT_LIST_8).
+                Replace(Constants.GA_RANK_BLK_LIST_9, Constants.GA_RANK_WHT_LIST_9).
+                Replace(Constants.GA_RANK_BLK_LIST_10, Constants.GA_RANK_WHT_LIST_10).
+                Replace(Constants.GA_RANK_BLK_LIST_11, Constants.GA_RANK_WHT_LIST_11).
+                Replace(Constants.GA_RANK_BLK_LIST_12, Constants.GA_RANK_WHT_LIST_12).
+                Replace(Constants.GA_RANK_BLK_LIST_13, Constants.GA_RANK_WHT_LIST_13).
+                Replace(Constants.GA_RANK_BLK_LIST_14, Constants.GA_RANK_WHT_LIST_14).
+                Replace(Constants.GA_RANK_BLK_LIST_15, Constants.GA_RANK_WHT_LIST_15).
+                Replace(Constants.GA_RANK_BLK_LIST_16, Constants.GA_RANK_WHT_LIST_16).
+                Replace(Constants.GA_RANK_BLK_LIST_17, Constants.GA_RANK_WHT_LIST_17).
+                Replace(Constants.GA_RANK_BLK_LIST_18, Constants.GA_RANK_WHT_LIST_18).
+                Replace(Constants.GA_RANK_BLK_LIST_19, Constants.GA_RANK_WHT_LIST_19).
+                Replace(Constants.GA_RANK_BLK_LIST_20, Constants.GA_RANK_WHT_LIST_20).
+                Replace(Constants.GA_RANK_BLK_LIST_21, Constants.GA_RANK_WHT_LIST_21).
+                Replace(Constants.GA_RANK_BLK_LIST_22, Constants.GA_RANK_WHT_LIST_22).
+                Replace(Constants.GA_RANK_BLK_LIST_23, Constants.GA_RANK_WHT_LIST_23).
+                Replace(Constants.GA_RANK_BLK_LIST_24, Constants.GA_RANK_WHT_LIST_24).
+                Replace(Constants.GA_RANK_BLK_LIST_25, Constants.GA_RANK_WHT_LIST_25).
+                Replace(Constants.GA_RANK_BLK_LIST_26, Constants.GA_RANK_WHT_LIST_26);
         }
 
         private string removeIllegalChars(string xmlStr)
@@ -618,7 +685,7 @@ namespace RS500gaWCFService
                 cmd.ExecuteNonQuery();
 
                 result = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_RESULT].Value.ToString());
-                playlist_id =  Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_PLAYLIST_ID].Value.ToString());
+                playlist_id = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_PLAYLIST_ID].Value.ToString());
                 List<string> rejectedTracksList = new List<string>();
                 if (result == Constants.SP_RESULT_OK)
                 {
@@ -632,7 +699,7 @@ namespace RS500gaWCFService
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_ID, track.TRACK_ID);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_NAME, track.NAME);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_ARTIST, track.ARTIST);
-                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM_GA_RANK, track.ALBUM_GA_RANK); 
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM_GA_RANK, track.ALBUM_GA_RANK);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM_ARTIST, track.ALBUM_ARTIST);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM, track.ALBUM);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_GENRE, track.GENRE);
@@ -648,6 +715,7 @@ namespace RS500gaWCFService
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_DISC_COUNT, track.DISC_COUNT);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_COUNT, track.TRACK_COUNT);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_LOCATION, track.LOCATION);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_CLEAN_LOC, track.CLEAN_LOC);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_FILE_FOLDER_COUNT, track.FILE_FOLDER_COUNT);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_LIBRARY_FOLDER_COUNT, track.LIBRARY_FOLDER_COUNT);
                         cmd.Parameters.AddWithValue(Constants.SP_PARAM_RESULT, result);

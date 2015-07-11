@@ -8,3 +8,13 @@ D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\bi
 D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.dll
 D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.pdb
 D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.csprojResolveAssemblyReference.cache
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.dll.config
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.dll
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.pdb
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.dll.CodeAnalysisLog.xml
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.dll.lastcodeanalysissucceeded
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\log4net.dll
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\log4net.xml
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.csprojResolveAssemblyReference.cache
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.dll
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.pdb

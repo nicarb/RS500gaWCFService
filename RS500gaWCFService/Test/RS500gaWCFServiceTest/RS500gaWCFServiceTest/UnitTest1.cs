@@ -43,17 +43,17 @@ namespace RS500gaWCFServiceTest
             string xmlFilepath = Path.Combine(xmldocsPath, xmlFileName);
             List<string> tracksSlotList = new List<string>();
 
-            tracksSlotList.Add("RS500GA_rk001-050");
-            tracksSlotList.Add("RS500GA_rk051-100");
-            tracksSlotList.Add("RS500GA_rk101-150");
-            tracksSlotList.Add("RS500GA_rk151-200");
-            tracksSlotList.Add("RS500GA_rk201-250");
-            tracksSlotList.Add("RS500GA_rk251-300");
-            tracksSlotList.Add("RS500GA_rk301-350");
-            tracksSlotList.Add("RS500GA_rk351-400");
+            //tracksSlotList.Add("RS500GA_rk001-050");
+            //tracksSlotList.Add("RS500GA_rk051-100");
+            //tracksSlotList.Add("RS500GA_rk101-150");
+            //tracksSlotList.Add("RS500GA_rk151-200");
+            //tracksSlotList.Add("RS500GA_rk201-250");
+            //tracksSlotList.Add("RS500GA_rk251-300");
+            //tracksSlotList.Add("RS500GA_rk301-350");
+            //tracksSlotList.Add("RS500GA_rk351-400");
             tracksSlotList.Add("RS500GA_rk401-450");
-            tracksSlotList.Add("RS500GA_rk451-500");
-            //tracksSlotList.Add("track52");
+            //tracksSlotList.Add("RS500GA_rk451-500");
+            ////tracksSlotList.Add("track52");
             //xmlContent = rl.GetString("track52");
 
             try
@@ -72,16 +72,15 @@ namespace RS500gaWCFServiceTest
                     //{
                     //    xmlContent.Replace(entry.Key, entry.Value);
                     //}
-                    retval = client.sendLibraryAsync(xmlContent, playlistTitle);
+                   retval = client.sendLibraryAsync(xmlContent, playlistTitle);
 
-                    //retval.Wait();
+                    retval.Wait();
                     waitEnd = client.CloseAsync();
                     waitEnd.Wait(210000);
                     //string result = retval.Result;
                     //Assert.AreEqual(result, "OK");
                 }
-            }
-            catch (Exception ex)
+            } catch (Exception ex)
             {
                 //throw ex;
             }

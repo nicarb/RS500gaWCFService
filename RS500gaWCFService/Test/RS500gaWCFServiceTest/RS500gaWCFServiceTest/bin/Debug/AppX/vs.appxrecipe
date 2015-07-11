@@ -7,7 +7,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>bffd94d3-a91d-4691-9b74-eaebefda9997</PackageIdentityName>
-    <IntermediateOutputPath>D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>D865D6FD6251CD90B56A022DD93638516FE2215E976E5F0056D1EE00C579916E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bffd94d3-a91d-4691-9b74-eaebefda9997_1.0.0.0_neutral__6nkvhtr3adrf8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bffd94d3-a91d-4691-9b74-eaebefda9997_6nkvhtr3adrf8!vstest.executionengine.App</RegisteredUserModeAppID>
@@ -17,20 +17,20 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-06-08T20:39:27.034</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.dll">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.dll">
       <PackagePath>RS500gaWCFServiceTest.dll</PackagePath>
-      <Modified>2015-06-08T22:19:44.560</Modified>
+      <Modified>2015-06-28T18:26:45.680</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.pdb">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.pdb">
       <PackagePath>RS500gaWCFServiceTest.pdb</PackagePath>
-      <Modified>2015-06-08T22:19:44.465</Modified>
+      <Modified>2015-06-28T18:26:45.583</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll</PackagePath>
@@ -68,85 +68,85 @@
       <PackagePath>vstest.executionengine.appcontainer.x86.exe</PackagePath>
       <Modified>2014-07-23T01:27:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestLogo.scale-100.png">
       <PackagePath>Images\UnitTestLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T05:01:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestSmallLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestSmallLogo.scale-100.png">
       <PackagePath>Images\UnitTestSmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T05:01:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestSplashScreen.scale-100.png">
       <PackagePath>Images\UnitTestSplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T05:01:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\Images\UnitTestStoreLogo.scale-100.png">
       <PackagePath>Images\UnitTestStoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T05:01:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\Nevermind.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\Nevermind.xml">
       <PackagePath>xml\Nevermind.xml</PackagePath>
       <Modified>2015-04-05T15:38:34.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\Rolling Stones 500 Greatest Albums_v3.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\Rolling Stones 500 Greatest Albums_v3.xml">
       <PackagePath>xml\Rolling Stones 500 Greatest Albums_v3.xml</PackagePath>
       <Modified>2015-04-19T23:45:07.531</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk001-010.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk001-010.xml">
       <PackagePath>xml\RS500GA_rk001-010.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.799</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk001-050.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk001-050.xml">
       <PackagePath>xml\RS500GA_rk001-050.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.823</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk051-100.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk051-100.xml">
       <PackagePath>xml\RS500GA_rk051-100.xml</PackagePath>
       <Modified>2015-04-13T21:38:11.242</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk101-150.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk101-150.xml">
       <PackagePath>xml\RS500GA_rk101-150.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.807</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk151-200.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk151-200.xml">
       <PackagePath>xml\RS500GA_rk151-200.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk201-250.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk201-250.xml">
       <PackagePath>xml\RS500GA_rk201-250.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk251-300.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk251-300.xml">
       <PackagePath>xml\RS500GA_rk251-300.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk301-350.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk301-350.xml">
       <PackagePath>xml\RS500GA_rk301-350.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.818</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk351-400.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk351-400.xml">
       <PackagePath>xml\RS500GA_rk351-400.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.821</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk401-450.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk401-450.xml">
       <PackagePath>xml\RS500GA_rk401-450.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.801</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk451-500.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\RS500GA_rk451-500.xml">
       <PackagePath>xml\RS500GA_rk451-500.xml</PackagePath>
       <Modified>2015-04-19T10:44:17.804</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\LondonCalling.xml">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\xml\LondonCalling.xml">
       <PackagePath>xml\LondonCalling.xml</PackagePath>
       <Modified>2015-04-05T15:25:48.556</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Development\VisualStudio\Projects\Tesi\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-06-08T22:16:59.564</Modified>
+      <Modified>2015-06-28T18:26:49.918</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
