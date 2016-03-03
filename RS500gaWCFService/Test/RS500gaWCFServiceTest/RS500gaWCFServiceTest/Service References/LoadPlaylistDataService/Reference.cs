@@ -29,6 +29,39 @@ namespace RS500gaWCFServiceTest.LoadPlaylistDataService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/generatePlaylist", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/generatePlaylistResponse")]
         System.Threading.Tasks.Task<string> generatePlaylistAsync(string xmlcontent);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/getSimilarArtistsLF", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/getSimilarArtistsLFResponse")]
+        System.Threading.Tasks.Task<string> getSimilarArtistsLFAsync(string limit, string artist, bool doAutocorrect, string mbid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/getSimilarTracksLF", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/getSimilarTracksLFResponse")]
+        System.Threading.Tasks.Task<string> getSimilarTracksLFAsync(string track, string artistName, string mbid, bool doAutocorrect, string limit);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/createPlaylistLF", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/createPlaylistLFResponse")]
+        System.Threading.Tasks.Task<string> createPlaylistLFAsync(string title, string description);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaAlbumsInfo", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaAlbumsInfoResponse")]
+        System.Threading.Tasks.Task<string> updateAllRs500GaAlbumsInfoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksInfo", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksInfoResponse")]
+        System.Threading.Tasks.Task<string> updateAllRs500GaTracksInfoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTrackSimilars", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTrackSimilarsResponse" +
+            "")]
+        System.Threading.Tasks.Task<string> updateAllRs500GaTrackSimilarsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistSimilars", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistSimilarsRespons" +
+            "e")]
+        System.Threading.Tasks.Task<string> updateAllRs500GaArtistSimilarsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksGraphConnection" +
+            "s", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksGraphConnection" +
+            "sResponse")]
+        System.Threading.Tasks.Task<string> updateAllRs500GaTracksGraphConnectionsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistsGraphConnectio" +
+            "ns", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistsGraphConnectio" +
+            "nsResponse")]
+        System.Threading.Tasks.Task<string> updateAllRs500GaArtistsGraphConnectionsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -88,6 +121,42 @@ namespace RS500gaWCFServiceTest.LoadPlaylistDataService {
         
         public System.Threading.Tasks.Task<string> generatePlaylistAsync(string xmlcontent) {
             return base.Channel.generatePlaylistAsync(xmlcontent);
+        }
+        
+        public System.Threading.Tasks.Task<string> getSimilarArtistsLFAsync(string limit, string artist, bool doAutocorrect, string mbid) {
+            return base.Channel.getSimilarArtistsLFAsync(limit, artist, doAutocorrect, mbid);
+        }
+        
+        public System.Threading.Tasks.Task<string> getSimilarTracksLFAsync(string track, string artistName, string mbid, bool doAutocorrect, string limit) {
+            return base.Channel.getSimilarTracksLFAsync(track, artistName, mbid, doAutocorrect, limit);
+        }
+        
+        public System.Threading.Tasks.Task<string> createPlaylistLFAsync(string title, string description) {
+            return base.Channel.createPlaylistLFAsync(title, description);
+        }
+        
+        public System.Threading.Tasks.Task<string> updateAllRs500GaAlbumsInfoAsync() {
+            return base.Channel.updateAllRs500GaAlbumsInfoAsync();
+        }
+        
+        public System.Threading.Tasks.Task<string> updateAllRs500GaTracksInfoAsync() {
+            return base.Channel.updateAllRs500GaTracksInfoAsync();
+        }
+        
+        public System.Threading.Tasks.Task<string> updateAllRs500GaTrackSimilarsAsync() {
+            return base.Channel.updateAllRs500GaTrackSimilarsAsync();
+        }
+        
+        public System.Threading.Tasks.Task<string> updateAllRs500GaArtistSimilarsAsync() {
+            return base.Channel.updateAllRs500GaArtistSimilarsAsync();
+        }
+        
+        public System.Threading.Tasks.Task<string> updateAllRs500GaTracksGraphConnectionsAsync() {
+            return base.Channel.updateAllRs500GaTracksGraphConnectionsAsync();
+        }
+        
+        public System.Threading.Tasks.Task<string> updateAllRs500GaArtistsGraphConnectionsAsync() {
+            return base.Channel.updateAllRs500GaArtistsGraphConnectionsAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync() {

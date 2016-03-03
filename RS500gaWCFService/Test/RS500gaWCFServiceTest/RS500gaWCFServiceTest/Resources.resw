@@ -446,4 +446,25 @@
   &lt;/dict&gt;
 &lt;/plist&gt;</value>
   </data>
+  <data name="generateNewPlaylistSample1XmlContent" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;rs500ga&gt;
+	&lt;playlist_input status="ok" type="train"&gt;
+		&lt;title&gt;LondonCalling-Lithium&lt;/title&gt;
+		&lt;description&gt;A test playlist creation&lt;/description&gt;
+		&lt;tracks&gt;
+			&lt;track&gt;
+				&lt;title&gt;London Calling&lt;/title&gt;
+				&lt;artist&gt;The Clash&lt;/artist&gt;
+				&lt;album&gt;London Calling&lt;/album&gt;
+			&lt;/track&gt;
+			&lt;track&gt;
+				&lt;title&gt;Lithium&lt;/title&gt;
+				&lt;artist&gt;Nirvana&lt;/artist&gt;
+				&lt;album&gt;Nevermind&lt;/album&gt;				
+			&lt;/track&gt;
+		&lt;/tracks&gt;
+	&lt;/playlist_input&gt;
+&lt;/rs500ga&gt;</value>
+  </data>
 </root>

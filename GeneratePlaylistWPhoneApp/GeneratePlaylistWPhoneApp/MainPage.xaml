@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="GeneratePlaylistWPhoneApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeneratePlaylistWPhoneApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+        <TextBlock>Playlist</TextBlock>
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Left">Title</TextBlock>
+                <TextBox></TextBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Left">Description</TextBlock>
+                <TextBox />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Left">Output</TextBlock>
+                <ComboBox >
+                    <ComboBoxItem Content="Undefined" HorizontalAlignment="Left" Width="394.999969482422"/>
+                </ComboBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Left">Bounds</TextBlock>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock>Tracks Nr.</TextBlock>
+                    <TextBox Text="0"></TextBox>
+                    <TextBlock>Duration</TextBlock>
+                    <TextBox Text="0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <Line Height="2" />
+            <StackPanel>
+                <TextBlock>Artists</TextBlock>
+            </StackPanel>
+            <StackPanel>
+                <TextBox />
+                <TextBox />
+            </StackPanel>
+            <Line Height="2" />
+            <StackPanel>
+                <TextBlock>Tracks</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock></TextBlock>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <TextBlock>Title</TextBlock>
+                    <TextBox Width="250"></TextBox>
+                </StackPanel>
+                <TextBlock>-</TextBlock>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <TextBlock>Artist</TextBlock>
+                    <TextBox Width="150"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock></TextBlock>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <TextBox Width="250"></TextBox>
+                </StackPanel>
+                <TextBlock>-</TextBlock>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <TextBox Width="150"></TextBox>
+                </StackPanel>
+            </StackPanel>
+            <Button Content="Generate Playlist"></Button>
+        </StackPanel>
+    </Grid>
+</Page>

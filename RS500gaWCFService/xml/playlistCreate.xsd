@@ -1,0 +1,50 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="lfm">
+    <xs:complexType>
+      <xs:sequence>
+	  <xs:element name="playlists" minOccurs="0">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="playlist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:int" name="id"/>
+              <xs:element type="xs:string" name="title"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:dateTime" name="date"/>
+              <xs:element type="xs:byte" name="size"/>
+              <xs:element type="xs:byte" name="duration"/>
+              <xs:element type="xs:byte" name="streamable"/>
+              <xs:element type="xs:anyURI" name="creator"/>
+              <xs:element type="xs:anyURI" name="url"/>
+              <xs:element name="image" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="size" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="user"/>
+    </xs:complexType>
+  </xs:element>
+	  <xs:element name="error" minOccurs="0">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:byte" name="code"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+	  </xs:sequence>
+      <xs:attribute type="xs:string" name="status"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -65,6 +65,9 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="taglib-sharp">
+      <HintPath>..\extra\TagLibSharp\taglib-sharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="WS\LoadPlaylistDataService.svc" />
@@ -81,9 +84,21 @@
     <Content Include="xml\transformLibrary.xsl" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data\LfAlbum.cs" />
+    <Compile Include="data\LfArtist.cs" />
+    <Compile Include="data\LfTags.cs" />
+    <Compile Include="data\LfTrack.cs" />
     <Compile Include="data\Track.cs" />
     <Compile Include="db\DBManager.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Logging\DBLogger.cs" />
+    <Compile Include="rs500ga\Rs500gaUtils.cs" />
+    <Compile Include="data\Playlist.cs" />
+    <Compile Include="rs500ga\RSPlaylistType.cs" />
     <Compile Include="utils\Constants.cs" />
+    <Compile Include="Lastfm\LastfmMethods.cs" />
+    <Compile Include="utils\NetUtils.cs" />
+    <Compile Include="utils\Utils.cs" />
     <Compile Include="WS\ILoadPlaylistDataService.cs" />
     <Compile Include="WS\LoadPlaylistDataService.svc.cs">
       <DependentUpon>LoadPlaylistDataService.svc</DependentUpon>
@@ -100,6 +115,21 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <None Include="xml\album_get_info.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\artist_getTopAlbums.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\artist_getTopTracks.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\auth_get_session.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\auth_get_token.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="xml\iTunesLibrary.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -107,6 +137,18 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="xml\iTunesLibrary_v4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\playlistGenerationInput.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\similar_artists.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\track_get_info.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xml\track_get_similar.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

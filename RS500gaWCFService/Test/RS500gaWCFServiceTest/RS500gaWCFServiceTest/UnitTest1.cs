@@ -7,6 +7,7 @@ using RS500gaWCFServiceTest.LoadPlaylistDataService;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Xml;
+using System.Globalization;
 
 namespace RS500gaWCFServiceTest
 {
@@ -51,7 +52,7 @@ namespace RS500gaWCFServiceTest
             //tracksSlotList.Add("RS500GA_rk251-300");
             //tracksSlotList.Add("RS500GA_rk301-350");
             //tracksSlotList.Add("RS500GA_rk351-400");
-            tracksSlotList.Add("RS500GA_rk401-450");
+            //tracksSlotList.Add("RS500GA_rk401-450");
             //tracksSlotList.Add("RS500GA_rk451-500");
             ////tracksSlotList.Add("track52");
             //xmlContent = rl.GetString("track52");
@@ -154,9 +155,6 @@ namespace RS500gaWCFServiceTest
 
         }
 
-
-
-
         [TestMethod]
         public void RS500gaWCF_SendPlaylist_ALL_fromfile_TestMethod()
         {
@@ -213,6 +211,7 @@ namespace RS500gaWCFServiceTest
             }
 
         }
+        
         [TestMethod]
         public void RS500gaWCF_SendPlaylist_Test_TestMethod()
         {
@@ -250,6 +249,198 @@ namespace RS500gaWCFServiceTest
             }
 
         }
+
+        [TestMethod]
+        public void RS500gaWCF_GetArtistSimilar_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                string xmlContent;
+
+                Task<string> retval;
+
+                xmlContent = "Nirvana";
+                retval = client.getSimilarArtistsLFAsync("30", xmlContent, false, "");
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "done");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [TestMethod]
+        public void RS500gaWCF_GetTrackSimilar_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                Task<string> retval;
+                string title = "Resistance";
+                string artist = "Muse";
+                retval = client.getSimilarTracksLFAsync("30", title, artist, false, "");
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [TestMethod]
+        public void RS500gaWCF_createPlaylist_LF_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                Task<string> retval;
+                string title = "Resistance";
+                string description = "Muse";
+                retval = client.createPlaylistLFAsync(title, description);
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [TestMethod]
+        public void RS500gaWCF_getAllAlbums_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                Task<string> retval;
+                retval = client.updateAllRs500GaAlbumsInfoAsync();
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [TestMethod]
+        public void RS500gaWCF_updateAllTracksInfo_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                Task<string> retval;
+                retval = client.updateAllRs500GaTracksInfoAsync();
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        [TestMethod]
+        public void RS500gaWCF_updateAllTracksSimilars_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                Task<string> retval;
+                retval = client.updateAllRs500GaTrackSimilarsAsync();
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [TestMethod]
+        public void RS500gaWCF_updateAllArtistsSimilars_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                Task<string> retval;
+                retval = client.updateAllRs500GaArtistSimilarsAsync();
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [TestMethod]
+        public void RS500gaWCF_updateAllTacksGraphEdges_test_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+
+                Task<string> retval;
+                retval = client.updateAllRs500GaTracksGraphConnectionsAsync();
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        [TestMethod]
+        public void RS500gaWCF_generatePlaylist_Sample1_TestMethod()
+        {
+            LoadPlaylistDataServiceClient client = new LoadPlaylistDataServiceClient();
+
+            try
+            {
+                String xmlContent;
+                ResourceLoader rl = new ResourceLoader("Resources");
+                Task<string> retval;
+                xmlContent = rl.GetString("generateNewPlaylistSample1XmlContent");
+                retval = client.generatePlaylistAsync(xmlContent);
+                retval.Wait();
+                string result = retval.Result;
+                Assert.AreEqual(result, "OK");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
 
 
     }

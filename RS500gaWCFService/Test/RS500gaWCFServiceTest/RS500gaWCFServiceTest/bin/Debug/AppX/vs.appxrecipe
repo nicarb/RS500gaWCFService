@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>bffd94d3-a91d-4691-9b74-eaebefda9997</PackageIdentityName>
     <IntermediateOutputPath>D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\obj\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>D865D6FD6251CD90B56A022DD93638516FE2215E976E5F0056D1EE00C579916E</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>622DC572ABC744B8E8EF13B6724CBA4E8D7F94A10F9AC499ECEA96C75AFA441E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bffd94d3-a91d-4691-9b74-eaebefda9997_1.0.0.0_neutral__6nkvhtr3adrf8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bffd94d3-a91d-4691-9b74-eaebefda9997_6nkvhtr3adrf8!vstest.executionengine.App</RegisteredUserModeAppID>
     <RegisteredPackageID>bffd94d3-a91d-4691-9b74-eaebefda9997</RegisteredPackageID>
@@ -20,17 +20,17 @@
     <AppXManifest Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-06-08T20:39:27.034</Modified>
+      <Modified>2015-10-30T20:45:34.549</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.dll">
       <PackagePath>RS500gaWCFServiceTest.dll</PackagePath>
-      <Modified>2015-06-28T18:26:45.680</Modified>
+      <Modified>2015-12-14T22:15:54.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.pdb">
       <PackagePath>RS500gaWCFServiceTest.pdb</PackagePath>
-      <Modified>2015-06-28T18:26:45.583</Modified>
+      <Modified>2015-12-14T22:15:54.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll</PackagePath>
@@ -46,11 +46,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.Extensions.MSAppContainerAdapter.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.Extensions.MSAppContainerAdapter.dll</PackagePath>
-      <Modified>2014-10-31T23:46:48.000</Modified>
+      <Modified>2015-06-28T19:58:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.ObjectModel.dll</PackagePath>
-      <Modified>2013-10-05T01:38:22.000</Modified>
+      <Modified>2015-06-28T19:58:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\TestPlatform\11.0\Redist\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.TestExecutor.Core.dll</PackagePath>
@@ -146,7 +146,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-06-28T18:26:49.918</Modified>
+      <Modified>2015-12-16T22:30:02.633</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

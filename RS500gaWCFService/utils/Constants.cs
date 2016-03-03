@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 
@@ -7,11 +8,23 @@ namespace RS500gaWCFService
 {
     public class Constants
     {
-
+        
         public const string ERROR_LOADING = "Error on loading";
         public const string ERROR_ON_CONNECTION = "ERROR ON CONNECTION";
-        public const string ERROR_INPUT_PARAMETER_FSTR = "Error on input parameter {0}";
+        public const string ERROR_INPUT_PARAMETER_FSTR = "Error on input parameter {0} - {1}";
+        public const string ERROR_PARSING_XML_FSTR = "Error on Parsing xml node {0} - {1}";
+        public const string ERROR_NULL_POINTER = "Error: null pointer";
+        public const string ERROR_NO_ARTISTS_OR_TRACKS = "Error: no artists or tracks to search";
+        public const string FORMAT_STRING_2_PARAMS = "{0} - {1}";
+        public const string ERROR_ON_CALLING_WEB_SERVICE_FSTR = "ERROR ON CALLING WEB_SERVICE:{0}";
+        public const string ERROR_ON_CONVERTING_FSTR = "ERROR ON CONVERTING VALUE '{0}' IN '{1}'";
+        
+
+        public const string REGEX_CDATA_STR = "<![CDATA[.+?]]>";
+        public const string REGEX_HREF_STR = "<a href=.+?/a>";
+
         public const string RETVAL_MESSAGE_DONE = "done";
+        public const string RETVAL_MESSAGE_ERROR = "Error";
         
 
         public const string FULLTIME_FORMAT_STRING = "HHmmsstt";
@@ -48,6 +61,67 @@ namespace RS500gaWCFService
         public const string XSD_TAG_DATE = "date";
         public const string XSD_TAG_SEPARATOR = "/";
 
+        public const string XSD_TAG_LF_LFM = "lfm";
+        public const string XSD_TAG_LF_SIMILARARTISTS = "similarartists";
+        public const string XSD_TAG_LF_ARTISTTOPALBUMS = "topalbums";
+        public const string XSD_TAG_LF_SIMILARTRACKS = "similartracks";
+        public const string XSD_TAG_LF_PLAYLISTS = "playlists";
+
+        public const string XSD_TAG_PLI_RS500GA = "rs500ga";
+        public const string XSD_TAG_PLI_PLAYLIST_INPUT = "playlist_input";
+        public const string XSD_TAG_PLI_PLAYLIST = "playlist";
+        public const string XSD_TAG_PLI_TITLE = "title";
+        public const string XSD_TAG_PLI_DESCRIPTION = "description";
+        public const string XSD_TAG_PLI_ARTISTS = "artists";
+        public const string XSD_TAG_PLI_ARTIST = "artist";
+        public const string XSD_TAG_PLI_NAME = "name";
+        public const string XSD_TAG_PLI_TRACKS = "tracks";
+        public const string XSD_TAG_PLI_TRACK = "track";
+        public const string XSD_TAG_PLI_LIMITS = "limits";
+        public const string XSD_TAG_PLI_TRACKS_NR = "tracks_nr";
+        public const string XSD_TAG_PLI_DURATION = "duration";
+        public const string XSD_TAG_PLI_OUTPUT = "output";
+        public const string XSD_TAG_PLI_TYPE = "type";
+
+        public const string XSD_TAG_LF_ERROR = "error";
+        public const string XSD_TAG_LF_STATUS = "status";
+        public const string XSD_TAG_LF_FAILED = "failed";
+        public const string XSD_TAG_LF_CODE = "code";
+
+        public const string XSD_TAG_LF_ALBUM = "album";
+        public const string XSD_TAG_LF_ARTIST = "artist";
+        public const string XSD_TAG_LF_NAME = "name";
+        public const string XSD_TAG_LF_MATCH = "match";
+        public const string XSD_TAG_LF_MBID = "mbid";
+        public const string XSD_TAG_LF_URL = "url";
+        public const string XSD_TAG_LF_ID = "id";
+        public const string XSD_TAG_LF_RANK = "rank";
+        public const string XSD_TAG_LF_PLAYCOUNT = "playcount";
+        public const string XSD_TAG_LF_DURATION = "duration";
+        public const string XSD_TAG_LF_TRACKS = "tracks";
+        public const string XSD_TAG_LF_TRACK = "track";
+        public const string XSD_TAG_LF_RELEASEDATE = "releasedate";
+        public const string XSD_TAG_LF_WIKI = "wiki";
+        public const string XSD_TAG_LF_SUMMARY = "summary";
+        public const string XSD_TAG_LF_CONTENT = "content";
+        public const string XSD_TAG_LF_TAGS = "tags";
+        public const string XSD_TAG_LF_TAG = "tag";
+        public const string XSD_TAG_LF_POSITION = "position";
+        public const string XSD_TAG_LF_TITLE = "title";
+        public const string XSD_TAG_LF_TOPTAGS = "toptags";
+        public const string XSD_TAG_LF_TOKEN = "token";
+        public const string XSD_TAG_LF_SESSION = "session";
+        public const string XSD_TAG_LF_KEY = "key";
+        public const string XSD_TAG_LF_PLAYLIST = "playlist";
+        public const string XSD_TAG_LF_USER = "user";
+        public const string XSD_TAG_LF_DESCRIPTION = "description";
+        public const string XSD_TAG_LF_SIZE = "size";
+        public const string XSD_TAG_LF_CREATOR = "creator";
+        public const string XSD_TAG_LF_DATE = "date";
+        public const string XSD_TAG_LF_BIO = "bio";
+
+        public const string LF_TADETIME_FORMAT = "d MMM yyyy, HH:mm";
+        public const string LF_TADETIME_FORMAT1 = "yyyy-MM-ddTHH:mm:ss";
         public const string WHITESPACE_STRING = " ";
         public const char GENRES_SEPARATOR_1 = '/';
         public const char GENRES_SEPARATOR_2 = '-';
@@ -55,13 +129,26 @@ namespace RS500gaWCFService
 
         public const string APP_SETTINGS_LYRICSURI = "lyricsURI";
         public const string APP_SETTINGS_XMLPATH = "xmlPath";
-        public const string APP_SETTINGS_XSDFILE = "xsdFile";
+        public const string APP_SETTINGS_PLAYLIST_XSDFILE = "xsdFile";
+        public const string APP_SETTINGS_LF_SIMILAR_ARTIST_XSDFILE = "lf_similar_artists_xsd";
+        public const string APP_SETTINGS_LF_SIMILAR_TRACK_XSDFILE = "lf_similar_tracks_xsd";
+        public const string APP_SETTINGS_LF_ARTIST_TOP_ALBUMS_XSDFILE = "lf_artist_top_albums_xsd";
+        public const string APP_SETTINGS_LF_ARTIST_TOP_TRACKS_XSDFILE = "lf_artist_top_tracks_xsd";
+        public const string APP_SETTINGS_LF_ALBUM_GET_INFO_XSDFILE = "lf_album_get_info_xsd";
+        public const string APP_SETTINGS_LF_TRACK_GET_INFO_XSDFILE = "lf_track_get_info_xsd";
+        public const string APP_SETTINGS_LF_AUTH_GET_TOKEN_XSDFILE = "lf_auth_get_token_xsd";
+        public const string APP_SETTINGS_LF_AUTH_GET_SESSION_XSDFILE = "lf_auth_get_session_xsd";
+        public const string APP_SETTINGS_PLAYLIST_GEN_INPUT_XSDFILE = "playlist_gen_input_xsd";
+        public const string APP_SETTINGS_PLAYLIST_CREATE_XSDFILE = "playlist_create_xsd";
+        public const string APP_SETTINGS_LF_ARTIST_GET_INFO_XSDFILE = "lf_artist_get_info_xsd";
+
         public const string APP_SETTINGS_OUTPUTPATH = "outputPath";
         public const string APP_SETTINGS_OUTPUTFILENAME = "rejectedTracksFN";
         public const string APP_SETTINGS_OUTPUTEXTENSION = "outputExtension";
 
         public const string APP_SETTINGS_CS_SERVER = "CS_SERVER";
         public const string APP_SETTINGS_CS_DATABASE = "CS_DATABASE";
+        public const string APP_SETTINGS_LOG_DATABASE = "LOG_DATABASE";
         public const string APP_SETTINGS_CS_UID = "CS_UID";
         public const string APP_SETTINGS_CS_PASSWORD = "CS_PASSWORD";
 
@@ -71,9 +158,45 @@ namespace RS500gaWCFService
         public const string PLAYLIST_MANUAL_DESC = "manualy created by 'sendDataToDb' service - 2";
         public const string PLAYLIST_TYPE_MANUAL_DESC = "manualy created by 'sendDataToDb' service - 2";
 
+        public const string PLAYLIST_TYPE_RS500GA = "rs500gaWS";
+        public const string PLAYLIST_RS500GA_DESC = "automatically created for generation of a new playlist";
+        public const string PLAYLIST_TYPE_RS500GA_DESC = "automatically created for generation of a new playlist";
+
         public const string STORED_PROC_ADD_NEW_PLAYLIST = "add_new_playlist";
+        public const string STORED_PROC_ADD_NEW_PLAYLIST_RS = "add_track_to_playlist_RS";
         public const string STORED_PROC_ADD_TRACK_TO_PLAYLIST = "add_track_to_playlist";
-        
+        public const string STORED_PROC_ADD_TRACK_TO_PLAYLIST_RS = "add_track_to_playlist_RS";
+        public const string STORED_PROC_GET_OR_ADD_ARTIST_LF = "get_or_add_Artist_LF";
+        public const string STORED_PROC_ADD_OR_UPDATE_MATCH_ARTIST_SIMILARS_LF = "add_or_update_match_artist_similars_LF";
+        public const string STORED_PROC_GET_OR_ADD_ALBUM_LF = "get_or_add_Album_LF";
+        public const string STORED_PROC_GET_OR_ADD_TRACK_LF = "get_or_add_Track_LF";
+        public const string STORED_PROC_GET_OR_ADD_TAG = "get_or_add_tag";
+        public const string STORED_PROC_ADD_OR_UPDATE_MATCH_TRACK_SIMILARS_LF = "add_or_update_match_track_similars_LF";
+        public const string STORED_PROC_UPDATE_TWO_NOT_DIRECT_CONNECTED_TRACKS = "update_two_not_direct_connected_tracks";
+        public const string STORED_PROC_UPDATE_TWO_NOT_DIRECT_CONNECTED_ARTISTS = "update_two_not_direct_connected_artists";
+        public const string STORED_PROC_ADD_OR_UPDATE_TRACK_TAGS_LF = "add_or_update_match_track_tag";
+        public const string STORED_PROC_ADD_OR_UPDATE_ALBUM_TAGS_LF = "add_or_update_match_album_tag";
+        public const string STORED_PROC_ADD_OR_UPDATE_ARTIST_TAGS_LF = "add_or_update_match_artist_tag";
+        public const string STORED_PROC_GET_ALL_RS500GA_ALBUMS = "get_all_rs500ga_albums";
+        public const string STORED_PROC_GET_ALL_RS500GA_TRACKS = "get_all_rs500ga_tracks";
+        public const string STORED_PROC_GET_ALL_RS500GA_ARTISTS = "get_all_rs500ga_artists";
+
+        public const string STORED_PROC_LOG_APP_ERROR_PROC = "app_log_error_proc";
+
+        public const string SP_PARAM_LOG_ERR_LOG_LEVEL = "p_log_level";
+        public const string SP_PARAM_LOG_ERR_ERR_DESC = "p_err_desc";
+        public const string SP_PARAM_LOG_ERR_FILENAME = "p_filename";
+        public const string SP_PARAM_LOG_ERR_ERR_FUN_NAME = "p_err_fun_name";
+        public const string SP_PARAM_LOG_ERR_ERR_FILENAME = "p_err_filename";
+        public const string SP_PARAM_LOG_ERR_ERR_ROW_NR = "p_err_row_nr";
+
+        public const int MYSQL_TINYTEXT_LEN = 255; // 255 bytes
+        public const int MYSQL_SHORTTEXT_2048 = 2048; // 2Kbytes
+        public const int MYSQL_TEXT_LEN = 65535; // 64 KiB
+        public const int MYSQL_MEDIUMTEXT_LEN = 16777215; // 16 MiB
+        public const int MYSQL_LONGTEXT_LEN = 255; // 4 GiB
+
+
         public const string SP_PARAM_PLAYLIST_TITLE = "playlistTitle";
         public const string SP_PARAM_PLAYLIST_DESC = "playlistDesc";
         public const string SP_PARAM_PLAYLIST_TYPE = "playlistType";
@@ -101,13 +224,76 @@ namespace RS500gaWCFService
         public const string SP_PARAM_CLEAN_LOC = "CleanLoc";
         public const string SP_PARAM_FILE_FOLDER_COUNT = "FileFolderCount";
         public const string SP_PARAM_LIBRARY_FOLDER_COUNT = "LibraryFolderCount";
+
+        public const string SP_GET_ARTIST_PARAM_NAME = "p_aname";
+        public const string SP_GET_ARTIST_PARAM_DESC = "p_adesc";
+        public const string SP_GET_ARTIST_PARAM_ID_ARTIST = "p_idArtist";
+
+        public const string SP_PARAM_MATCH_ARTIST_IDARTIST1 = "p_idArtist1";
+        public const string SP_PARAM_MATCH_ARTIST_IDARTIST2 = "p_idArtist2";
+        public const string SP_PARAM_MATCH_ARTIST_MATCH = "p_match";
+        public const string SP_PARAM_MATCH_ARTIST_ASDESC = "p_asdesc";
+
+        public const string SP_PARAM_MATCH_TRACK_IDTRACK1 = "p_idTrack1";
+        public const string SP_PARAM_MATCH_TRACK_IDTRACK2 = "p_idTrack2";
+        public const string SP_PARAM_MATCH_TRACK_MATCH = "p_match";
+        public const string SP_PARAM_MATCH_TRACK_ASDESC = "p_asdesc";
+
+        public const string SP_PARAM_UPDATE_TAG_ID_TRACK = "p_idTrack";
+        public const string SP_PARAM_UPDATE_TAG_ID_TAG = "p_idTag";
+        public const string SP_PARAM_UPDATE_TAG_ID_DESC = "p_agdesc";
+        public const string SP_PARAM_UPDATE_TAG_ID_ARTIST = "p_idArtist";
+        public const string SP_PARAM_UPDATE_TAG_ID_ALBUM = "p_idAlbum";
+
+        public const string SP_GET_ALBUM_LF_PARAM_NAME = "p_aname";
+        public const string SP_GET_ALBUM_LF_PARAM_SUBTITLE = "p_subtitle";
+        public const string SP_GET_ALBUM_LF_PARAM_DESC = "p_adesc";
+        public const string SP_GET_ALBUM_LF_PARAM_NOTE = "p_note";
+        public const string SP_GET_ALBUM_LF_PARAM_ID_ARTIST = "p_idArtist";
+        public const string SP_GET_ALBUM_LF_PARAM_RANK = "p_rank";
+        public const string SP_GET_ALBUM_LF_PARAM_YEAR = "p_ayear";
+        public const string SP_GET_ALBUM_LF_PARAM_NR_OF_CDS = "p_nr_of_cds";
+        public const string SP_GET_ALBUM_LF_PARAM_NR_OF_TRACKS = "p_nr_of_tracks";
+        public const string SP_GET_ALBUM_LF_PARAM_PLAYCOUNT = "p_playcount";
+        public const string SP_GET_ALBUM_LF_PARAM_ID_ALBUM = "p_idAlbum";
+
+        public const string SP_GET_TRACK_LF_PARAM_TITLE = "p_title";
+        public const string SP_GET_TRACK_LF_PARAM_DESC = "p_adesc";
+        public const string SP_GET_TRACK_LF_PARAM_NOTE = "p_note";
+        public const string SP_GET_TRACK_LF_PARAM_ID_ARTIST = "p_idArtist";
+        public const string SP_GET_TRACK_LF_PARAM_ID_ALBUM = "p_idAlbum";
+        public const string SP_GET_TRACK_LF_PARAM_RANK = "p_rank";
+        public const string SP_GET_TRACK_LF_PARAM_PLAYCOUNT = "p_playcount";
+        public const string SP_GET_TRACK_LF_PARAM_ID_TRACK = "p_idTrack";
+
+        public const string SP_GET_ALBUM_LF_PARAM_ID_TAG = "p_idTag";
+
         public const string SP_PARAM_RESULT = "result";
         public const string SP_PARAM_VRESULT = "vresult";
+        public const string SP_PARAM_MBID = "p_mbid";
+        public const string SP_PARAM_URL = "p_url";
+
+        public const string SP_TABLE_COLUMN_IDALBUM = "idAlbum";
+        public const string SP_TABLE_COLUMN_TITLE = "title";
+        public const string SP_TABLE_COLUMN_ATITLE = "atitle";
+        public const string SP_TABLE_COLUMN_TTITLE = "ttitle";
+        public const string SP_TABLE_COLUMN_RANK_RS_GA = "rank_rs_ga";
+        public const string SP_TABLE_COLUMN_ARTIST = "artist";
+        public const string SP_TABLE_COLUMN_ANAME = "aname";
+        public const string SP_TABLE_COLUMN_IDTRACK = "idtrack";
+        public const string SP_TABLE_COLUMN_IDARTIST = "idArtist";
+        //, , , , 
 
         public const int SP_RESULT_OK = 0;
 
         public const int GA_RANK_DEF_STR_INIT = 0;
         public const int GA_RANK_DEF_STR_LEN = 3;
+
+        public const int LF_ARTIST_TOP_ALBUMS_LIMIT = 10;
+        public const int LF_SIMILAR_ARTISTS_LIMIT = 30;
+        public const int LF_ALL_SIMILAR_ARTISTS_LIMIT = 50;
+        public const int LF_ARTIST_TOP_TRACKS_LIMIT = 10;
+        public const int LF_SIMILAR_TRACKS_LIMIT = 50;
 
         public const char GA_RANK_DEF_SPLIT_CHAR = '#';
         public const string GA_RANK_BLK_INIT_STR = @"file://localhost/";

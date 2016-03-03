@@ -14,7 +14,8 @@ D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.
 D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.dll.CodeAnalysisLog.xml
 D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\RS500gaWCFService.dll.lastcodeanalysissucceeded
 D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\log4net.dll
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\taglib-sharp.dll
 D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\bin\log4net.xml
-D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.csprojResolveAssemblyReference.cache
 D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.dll
 D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.pdb
+D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\obj\Debug\RS500gaWCFService.csprojResolveAssemblyReference.cache

@@ -30,6 +30,60 @@
   <wsdl:message name="ILoadPlaylistDataService_generatePlaylist_OutputMessage">
     <wsdl:part name="parameters" element="tns:generatePlaylistResponse" />
   </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_getSimilarArtistsLF_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSimilarArtistsLF" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_getSimilarArtistsLF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSimilarArtistsLFResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_getSimilarTracksLF_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSimilarTracksLF" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_getSimilarTracksLF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSimilarTracksLFResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_createPlaylistLF_InputMessage">
+    <wsdl:part name="parameters" element="tns:createPlaylistLF" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_createPlaylistLF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createPlaylistLFResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaAlbumsInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaAlbumsInfo" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaAlbumsInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaAlbumsInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaTracksInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaTracksInfo" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaTracksInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaTracksInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaTrackSimilars_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaTrackSimilars" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaTrackSimilars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaTrackSimilarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaArtistSimilars_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaArtistSimilars" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaArtistSimilars_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaArtistSimilarsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaTracksGraphConnections_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaTracksGraphConnections" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaTracksGraphConnections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaTracksGraphConnectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaArtistsGraphConnections_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaArtistsGraphConnections" />
+  </wsdl:message>
+  <wsdl:message name="ILoadPlaylistDataService_updateAllRs500GaArtistsGraphConnections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateAllRs500GaArtistsGraphConnectionsResponse" />
+  </wsdl:message>
   <wsdl:portType name="ILoadPlaylistDataService">
     <wsdl:operation name="sendLibrary">
       <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/sendLibrary" message="tns:ILoadPlaylistDataService_sendLibrary_InputMessage" />
@@ -46,6 +100,42 @@
     <wsdl:operation name="generatePlaylist">
       <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/generatePlaylist" message="tns:ILoadPlaylistDataService_generatePlaylist_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/generatePlaylistResponse" message="tns:ILoadPlaylistDataService_generatePlaylist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSimilarArtistsLF">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/getSimilarArtistsLF" message="tns:ILoadPlaylistDataService_getSimilarArtistsLF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/getSimilarArtistsLFResponse" message="tns:ILoadPlaylistDataService_getSimilarArtistsLF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSimilarTracksLF">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/getSimilarTracksLF" message="tns:ILoadPlaylistDataService_getSimilarTracksLF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/getSimilarTracksLFResponse" message="tns:ILoadPlaylistDataService_getSimilarTracksLF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createPlaylistLF">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/createPlaylistLF" message="tns:ILoadPlaylistDataService_createPlaylistLF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/createPlaylistLFResponse" message="tns:ILoadPlaylistDataService_createPlaylistLF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaAlbumsInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaAlbumsInfo" message="tns:ILoadPlaylistDataService_updateAllRs500GaAlbumsInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaAlbumsInfoResponse" message="tns:ILoadPlaylistDataService_updateAllRs500GaAlbumsInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaTracksInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksInfo" message="tns:ILoadPlaylistDataService_updateAllRs500GaTracksInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksInfoResponse" message="tns:ILoadPlaylistDataService_updateAllRs500GaTracksInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaTrackSimilars">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTrackSimilars" message="tns:ILoadPlaylistDataService_updateAllRs500GaTrackSimilars_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTrackSimilarsResponse" message="tns:ILoadPlaylistDataService_updateAllRs500GaTrackSimilars_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaArtistSimilars">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistSimilars" message="tns:ILoadPlaylistDataService_updateAllRs500GaArtistSimilars_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistSimilarsResponse" message="tns:ILoadPlaylistDataService_updateAllRs500GaArtistSimilars_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaTracksGraphConnections">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksGraphConnections" message="tns:ILoadPlaylistDataService_updateAllRs500GaTracksGraphConnections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksGraphConnectionsResponse" message="tns:ILoadPlaylistDataService_updateAllRs500GaTracksGraphConnections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaArtistsGraphConnections">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistsGraphConnections" message="tns:ILoadPlaylistDataService_updateAllRs500GaArtistsGraphConnections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistsGraphConnectionsResponse" message="tns:ILoadPlaylistDataService_updateAllRs500GaArtistsGraphConnections_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ILoadPlaylistDataService" type="tns:ILoadPlaylistDataService">
@@ -79,6 +169,87 @@
     </wsdl:operation>
     <wsdl:operation name="generatePlaylist">
       <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/generatePlaylist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSimilarArtistsLF">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/getSimilarArtistsLF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSimilarTracksLF">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/getSimilarTracksLF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPlaylistLF">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/createPlaylistLF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaAlbumsInfo">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaAlbumsInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaTracksInfo">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaTrackSimilars">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTrackSimilars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaArtistSimilars">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistSimilars" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaTracksGraphConnections">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaTracksGraphConnections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateAllRs500GaArtistsGraphConnections">
+      <soap:operation soapAction="http://tempuri.org/ILoadPlaylistDataService/updateAllRs500GaArtistsGraphConnections" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
