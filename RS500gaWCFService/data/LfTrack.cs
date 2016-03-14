@@ -28,6 +28,7 @@ namespace RS500gaWCFService.data
         private string _wiki_summary;
         private string _wiki_content;
 
+        
         public string name
         {
             get
@@ -257,5 +258,6 @@ namespace RS500gaWCFService.data
 
             return retval;
         }
+
     }
 }

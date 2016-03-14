@@ -125,6 +125,11 @@ namespace RS500gaWCFService.db
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="albums"></param>
+        /// <returns></returns>
         public static string getAlbumsIdsFromDb(List<LfAlbum> albums)
         {
             //Dictionary<int, double> albumsIDs = new Dictionary<int, double>();
@@ -212,6 +217,7 @@ namespace RS500gaWCFService.db
             }
             return retval;
         }
+
 
         public static Dictionary<int, double> getArtistsIdsFromDb(DataTable dt)
         {
@@ -705,7 +711,7 @@ namespace RS500gaWCFService.db
                 return retv;
             }
 
-            foreach (LfTrack track in playlist.tracks)
+            foreach (LfTrack track in playlist.source_tracks)
             {
                 
                 if (track.id == 0)
@@ -741,6 +747,261 @@ namespace RS500gaWCFService.db
 
             return retval;
         }
+
+
+        public static string sendPlaylstToDb(Dictionary<int, Track> tracksDic, string playlistTitle)
+        {
+            string retval = string.Empty;
+            string funName = "string sendDataToDb(Dictionary<int, Track> tracksDic, string playlistTitle) - ";
+            string plType = Constants.PLAYLIST_TYPE_MANUAL;
+            string plDesc = Constants.PLAYLIST_MANUAL_DESC;
+            string plTypeDesc = Constants.PLAYLIST_TYPE_MANUAL_DESC;
+            int playlist_id = -1;
+            int result = -1;
+            string vresult = string.Empty;
+
+            string outputfilePath = ConfigurationManager.AppSettings[Constants.APP_SETTINGS_OUTPUTPATH].ToString();
+            string outputfileName = ConfigurationManager.AppSettings[Constants.APP_SETTINGS_OUTPUTFILENAME].ToString();
+            string outputfileExtension = ConfigurationManager.AppSettings[Constants.APP_SETTINGS_OUTPUTEXTENSION].ToString();
+
+            DBManager dbMng = new DBManager();
+            if (dbMng.OpenConnection())
+            {
+                string rtn = Constants.STORED_PROC_ADD_NEW_PLAYLIST;
+                MySqlCommand cmd = new MySqlCommand(rtn, dbMng.Connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_TITLE, Utils.getStringWithinLen(playlistTitle, Constants.MYSQL_TINYTEXT_LEN));
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_DESC, Utils.getStringWithinLen(plDesc, Constants.MYSQL_TINYTEXT_LEN));
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_TYPE, Utils.getStringWithinLen(plType, Constants.MYSQL_TINYTEXT_LEN));
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_TYPE_DESC, Utils.getStringWithinLen(plTypeDesc, Constants.MYSQL_TINYTEXT_LEN));
+
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_ID, playlist_id);
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_RESULT, result);
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_VRESULT, vresult);
+
+                cmd.Parameters[Constants.SP_PARAM_PLAYLIST_ID].Direction = ParameterDirection.Output;
+                cmd.Parameters[Constants.SP_PARAM_RESULT].Direction = ParameterDirection.Output;
+                cmd.Parameters[Constants.SP_PARAM_VRESULT].Direction = ParameterDirection.Output;
+
+                cmd.ExecuteNonQuery();
+
+                result = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_RESULT].Value.ToString());
+                playlist_id = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_PLAYLIST_ID].Value.ToString());
+                List<string> rejectedTracksList = new List<string>();
+                if (result == Constants.SP_RESULT_OK)
+                {
+                    foreach (Track track in tracksDic.Values)
+                    {
+                        rtn = Constants.STORED_PROC_ADD_TRACK_TO_PLAYLIST;
+                        cmd = new MySqlCommand(rtn, dbMng.Connection);
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_ID, playlist_id);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_ID, track.TRACK_ID);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_NAME, Utils.getStringWithinLen(track.NAME, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ARTIST, Utils.getStringWithinLen(track.ARTIST, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM_GA_RANK, track.ALBUM_GA_RANK);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM_ARTIST, Utils.getStringWithinLen(track.ALBUM_ARTIST, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM, Utils.getStringWithinLen(track.ALBUM, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_GENRE, Utils.getStringWithinLen(track.GENRE, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_KIND, Utils.getStringWithinLen(track.KIND, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_SIZE, track.SIZE);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TOTAL_TIME, track.TOTAL_TIME);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_NUMBER, track.TRACK_NUMBER);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_YEAR, track.YEAR);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DATE_MODIFIED, track.DATE_MODIFIED);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DATE_ADDED, track.DATE_ADDED);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_BIT_RATE, track.BIT_RATE);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DISC_NUMBER, track.DISC_NUMBER);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DISC_COUNT, track.DISC_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_COUNT, track.TRACK_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_LOCATION, Utils.getStringWithinLen(track.LOCATION, Constants.MYSQL_SHORTTEXT_2048));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_CLEAN_LOC, Utils.getStringWithinLen(track.CLEAN_LOC, Constants.MYSQL_SHORTTEXT_2048));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_FILE_FOLDER_COUNT, track.FILE_FOLDER_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_LIBRARY_FOLDER_COUNT, track.LIBRARY_FOLDER_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_RESULT, result);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_VRESULT, vresult);
+
+                        cmd.Parameters[Constants.SP_PARAM_RESULT].Direction = ParameterDirection.Output;
+                        cmd.Parameters[Constants.SP_PARAM_VRESULT].Direction = ParameterDirection.Output;
+
+                        cmd.ExecuteNonQuery();
+
+                        result = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_RESULT].Value.ToString());
+                        vresult = cmd.Parameters[Constants.SP_PARAM_VRESULT].Value.ToString();
+
+                        if (result != Constants.SP_RESULT_OK)
+                        {
+                            rejectedTracksList.Add(track.ToString());
+                            DBLogger.logWarn(funName + track.ToString());
+                        }
+
+                        cmd.Dispose();
+                    }
+
+                    dbMng.CloseConnection();
+
+                    if (rejectedTracksList.Count > 0)
+                    {
+                        string timeStamp = "_" + DateTime.Now.ToString(Constants.FULLTIME_FORMAT_STRING);
+                        string filename = outputfileName + timeStamp + outputfileExtension;
+
+                        string outputfile = Path.Combine(outputfilePath, filename);
+                        StreamWriter file = new System.IO.StreamWriter(outputfile);
+
+                        foreach (string trackFullStr in rejectedTracksList)
+                        {
+                            file.WriteLine(trackFullStr);
+                            DBLogger.logWarn(trackFullStr);
+                        }
+
+                        file.Close();
+                    }
+                }
+                else
+                {
+                    log.Error(vresult);
+                    DBLogger.logWarn(string.Format(Constants.FORMAT_STRING_2_PARAMS, vresult, playlistTitle));
+                }
+                dbMng.CloseConnection();
+            }
+            else
+            {
+                retval = Constants.ERROR_ON_CONNECTION;
+                log.Error(Constants.ERROR_ON_CONNECTION);
+                DBLogger.logWarn(retval);
+            }
+            return retval;
+        }
+
+
+        public static string sendLibraryToDb(Dictionary<int, Track> tracksDic, string libraryTitle)
+        {
+            string retval = string.Empty;
+            string funName = "string sendDataToDb(Dictionary<int, Track> tracksDic, string playlistTitle) - ";
+            string plType = Constants.PLAYLIST_TYPE_MANUAL;
+            string plDesc = Constants.PLAYLIST_MANUAL_DESC;
+            string plTypeDesc = Constants.PLAYLIST_TYPE_MANUAL_DESC;
+            int playlist_id = -1;
+            int result = -1;
+            string vresult = string.Empty;
+
+            string outputfilePath = ConfigurationManager.AppSettings[Constants.APP_SETTINGS_OUTPUTPATH].ToString();
+            string outputfileName = ConfigurationManager.AppSettings[Constants.APP_SETTINGS_OUTPUTFILENAME].ToString();
+            string outputfileExtension = ConfigurationManager.AppSettings[Constants.APP_SETTINGS_OUTPUTEXTENSION].ToString();
+
+            DBManager dbMng = new DBManager();
+            if (dbMng.OpenConnection())
+            {
+                string rtn = Constants.STORED_PROC_ADD_NEW_PLAYLIST;
+                MySqlCommand cmd = new MySqlCommand(rtn, dbMng.Connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_TITLE, Utils.getStringWithinLen(libraryTitle, Constants.MYSQL_TINYTEXT_LEN));
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_DESC, Utils.getStringWithinLen(plDesc, Constants.MYSQL_TINYTEXT_LEN));
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_TYPE, Utils.getStringWithinLen(plType, Constants.MYSQL_TINYTEXT_LEN));
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_TYPE_DESC, Utils.getStringWithinLen(plTypeDesc, Constants.MYSQL_TINYTEXT_LEN));
+
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_ID, playlist_id);
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_RESULT, result);
+                cmd.Parameters.AddWithValue(Constants.SP_PARAM_VRESULT, vresult);
+
+                cmd.Parameters[Constants.SP_PARAM_PLAYLIST_ID].Direction = ParameterDirection.Output;
+                cmd.Parameters[Constants.SP_PARAM_RESULT].Direction = ParameterDirection.Output;
+                cmd.Parameters[Constants.SP_PARAM_VRESULT].Direction = ParameterDirection.Output;
+
+                cmd.ExecuteNonQuery();
+
+                result = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_RESULT].Value.ToString());
+                playlist_id = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_PLAYLIST_ID].Value.ToString());
+                List<string> rejectedTracksList = new List<string>();
+                if (result == Constants.SP_RESULT_OK)
+                {
+                    foreach (Track track in tracksDic.Values)
+                    {
+                        rtn = Constants.STORED_PROC_ADD_TRACK_TO_PLAYLIST;
+                        cmd = new MySqlCommand(rtn, dbMng.Connection);
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_PLAYLIST_ID, playlist_id);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_ID, track.TRACK_ID);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_NAME, Utils.getStringWithinLen(track.NAME, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ARTIST, Utils.getStringWithinLen(track.ARTIST, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM_GA_RANK, track.ALBUM_GA_RANK);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM_ARTIST, Utils.getStringWithinLen(track.ALBUM_ARTIST, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_ALBUM, Utils.getStringWithinLen(track.ALBUM, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_GENRE, Utils.getStringWithinLen(track.GENRE, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_KIND, Utils.getStringWithinLen(track.KIND, Constants.MYSQL_TINYTEXT_LEN));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_SIZE, track.SIZE);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TOTAL_TIME, track.TOTAL_TIME);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_NUMBER, track.TRACK_NUMBER);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_YEAR, track.YEAR);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DATE_MODIFIED, track.DATE_MODIFIED);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DATE_ADDED, track.DATE_ADDED);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_BIT_RATE, track.BIT_RATE);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DISC_NUMBER, track.DISC_NUMBER);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_DISC_COUNT, track.DISC_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_TRACK_COUNT, track.TRACK_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_LOCATION, Utils.getStringWithinLen(track.LOCATION, Constants.MYSQL_SHORTTEXT_2048));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_CLEAN_LOC, Utils.getStringWithinLen(track.CLEAN_LOC, Constants.MYSQL_SHORTTEXT_2048));
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_FILE_FOLDER_COUNT, track.FILE_FOLDER_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_LIBRARY_FOLDER_COUNT, track.LIBRARY_FOLDER_COUNT);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_RESULT, result);
+                        cmd.Parameters.AddWithValue(Constants.SP_PARAM_VRESULT, vresult);
+
+                        cmd.Parameters[Constants.SP_PARAM_RESULT].Direction = ParameterDirection.Output;
+                        cmd.Parameters[Constants.SP_PARAM_VRESULT].Direction = ParameterDirection.Output;
+
+                        cmd.ExecuteNonQuery();
+
+                        result = Convert.ToInt32(cmd.Parameters[Constants.SP_PARAM_RESULT].Value.ToString());
+                        vresult = cmd.Parameters[Constants.SP_PARAM_VRESULT].Value.ToString();
+
+                        if (result != Constants.SP_RESULT_OK)
+                        {
+                            rejectedTracksList.Add(track.ToString());
+                            DBLogger.logWarn(funName + track.ToString());
+                        }
+
+                        cmd.Dispose();
+                    }
+
+                    dbMng.CloseConnection();
+
+                    if (rejectedTracksList.Count > 0)
+                    {
+                        string timeStamp = "_" + DateTime.Now.ToString(Constants.FULLTIME_FORMAT_STRING);
+                        string filename = outputfileName + timeStamp + outputfileExtension;
+
+                        string outputfile = Path.Combine(outputfilePath, filename);
+                        StreamWriter file = new System.IO.StreamWriter(outputfile);
+
+                        foreach (string trackFullStr in rejectedTracksList)
+                        {
+                            file.WriteLine(trackFullStr);
+                            DBLogger.logWarn(trackFullStr);
+                        }
+
+                        file.Close();
+                    }
+                }
+                else
+                {
+                    log.Error(vresult);
+                    DBLogger.logWarn(string.Format(Constants.FORMAT_STRING_2_PARAMS, vresult, libraryTitle));
+                }
+                dbMng.CloseConnection();
+            }
+            else
+            {
+                retval = Constants.ERROR_ON_CONNECTION;
+                log.Error(Constants.ERROR_ON_CONNECTION);
+                DBLogger.logWarn(retval);
+            }
+            return retval;
+        }
+
 
         public static string sendDataToDb(Dictionary<int, Track> tracksDic, string playlistTitle)
         {

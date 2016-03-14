@@ -861,7 +861,11 @@ namespace RS500gaWCFService.lastfm
             return retval;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="playlist"></param>
+        /// <returns></returns>
         public static string playlistCreate(Playlist playlist)
         {
             string retval = string.Empty;
@@ -1012,6 +1016,11 @@ namespace RS500gaWCFService.lastfm
             return retval;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="playlist"></param>
+        /// <returns></returns>
         public static string searchCandidateTracks(Playlist playlist)
         {
             string retval = string.Empty;
@@ -2067,6 +2076,16 @@ namespace RS500gaWCFService.lastfm
             return retval;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="lfArtist"></param>
+        /// <param name="doAutocorrect"></param>
+        /// <param name="username"></param>
+        /// <param name="lang"></param>
+        /// <param name="mbid"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static string getArtistInfo(LfArtist lfArtist, bool doAutocorrect, string username, string lang, string mbid, string key)
         {
             //LfAlbum lfTrack = new LfAlbum();
@@ -2244,7 +2263,11 @@ namespace RS500gaWCFService.lastfm
             return retval;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="artist"></param>
+        /// <returns></returns>
         public static string getArtistTopTracks(LfArtist artist)
         {
             string retval = string.Empty;
@@ -2336,6 +2359,11 @@ namespace RS500gaWCFService.lastfm
         //    return Constants.RETVAL_MESSAGE_DONE;
         //}
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="artist"></param>
+        /// <returns></returns>
         public static string getAristsSimilarsTopAlbums(LfArtist artist)
         {
             string retval = string.Empty;
@@ -2391,6 +2419,11 @@ namespace RS500gaWCFService.lastfm
         //    return albumsInfo;
         //}
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="artist"></param>
+        /// <returns></returns>
         public static string getAllArtistAlbumsInfo(LfArtist artist)
         {
             //List<LfAlbum> albumsInfo = new List<LfAlbum>();
@@ -2426,7 +2459,11 @@ namespace RS500gaWCFService.lastfm
             return retval;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="artist"></param>
+        /// <returns></returns>
         public static string getAristsTopAlbums(LfArtist artist)
         {
             string retval = string.Empty;
@@ -2814,20 +2851,35 @@ namespace RS500gaWCFService.lastfm
             string retval = string.Empty;
             string funName = "getTrackInfo(LfTrack lfTrack, string artistName, bool doAutocorrect, string username, string lang, string key) - ";
             string artistname = string.Empty;
+            string trackname = string.Empty;
             if (lfTrack == null)
             {
                 retval = funName + Constants.ERROR_NULL_POINTER + "lfTrack";
                 DBLogger.logWarn(retval);
                 return retval;
             }
+
+            if (!string.IsNullOrEmpty(lfTrack.name))
+            {
+                trackname = lfTrack.name;
+            }
+
             if (lfTrack.artist != null)
             {
                 artistname = lfTrack.artist.name;
                 if (string.IsNullOrEmpty(lfTrack.artistName))
                     lfTrack.artistName = artistname;
             }
+            else
+            {
+                if (!string.IsNullOrEmpty(lfTrack.artistName))
+                {
+                    lfTrack.artist = new LfArtist();
+                    lfTrack.artist.name = lfTrack.artistName;
+                }
+            }
 
-            if ((string.IsNullOrEmpty(artistname) || string.IsNullOrEmpty(lfTrack.name)) && string.IsNullOrEmpty(lfTrack.mbid))
+            if ((string.IsNullOrEmpty(artistname) || string.IsNullOrEmpty(trackname)) && string.IsNullOrEmpty(lfTrack.mbid))
             {
                 retval = funName + string.Format(Constants.ERROR_INPUT_PARAMETER_FSTR, artistname, "Artist and track name must be specified.");
                 DBLogger.logWarn(retval);
@@ -2851,7 +2903,7 @@ namespace RS500gaWCFService.lastfm
 
 
 
-            if (!string.IsNullOrEmpty(artistname) && !string.IsNullOrEmpty(lfTrack.name))
+            if (!string.IsNullOrEmpty(artistname) && !string.IsNullOrEmpty(trackname))
             {
                 requestUrl += string.Format(NetUtils.WEB_URL_PARAM_FSTR, LASTFM_PARAM_ARTIST_TAG) +
                                 System.Web.HttpUtility.UrlEncode(artistname.Trim()) +
@@ -2941,8 +2993,12 @@ namespace RS500gaWCFService.lastfm
                         if (locNodeIter.MoveNext() && locNodeIter.Current.Name == Constants.XSD_TAG_LF_PLAYCOUNT)
                             lfTrack.playcount = locNodeIter.Current.ValueAsInt;
 
+                        LfArtist artist;
+                        if (lfTrack.artist == null)
+                            artist = new LfArtist();
+                        else
+                            artist = lfTrack.artist;
 
-                        LfArtist artist = new LfArtist();
                         locNodeIter = node.Select(Constants.XSD_TAG_LF_ARTIST + Constants.XSD_TAG_SEPARATOR + Constants.XSD_TAG_LF_NAME);
                         if (locNodeIter.MoveNext() && locNodeIter.Current.Name == Constants.XSD_TAG_LF_NAME)
                             artist.name = locNodeIter.Current.Value;
@@ -2955,7 +3011,7 @@ namespace RS500gaWCFService.lastfm
                         if (locNodeIter.MoveNext() && locNodeIter.Current.Name == Constants.XSD_TAG_LF_URL)
                             artist.url = locNodeIter.Current.Value;
 
-                        lfTrack.artist = artist;
+                        //lfTrack.artist = artist;
 
                         locNodeIter = node.Select(Constants.XSD_TAG_LF_ALBUM);
                         LfAlbum tAlbum = new LfAlbum();
@@ -3035,8 +3091,6 @@ namespace RS500gaWCFService.lastfm
 
             return retval;
         }
-
-
 
 
         /* public static string parseXMLContent(string xmlcontent, out Playlist playlist)

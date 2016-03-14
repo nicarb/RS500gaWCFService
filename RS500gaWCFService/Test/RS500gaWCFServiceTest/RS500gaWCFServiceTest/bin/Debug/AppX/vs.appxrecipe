@@ -26,11 +26,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.dll">
       <PackagePath>RS500gaWCFServiceTest.dll</PackagePath>
-      <Modified>2015-12-14T22:15:54.408</Modified>
+      <Modified>2016-03-05T00:53:16.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\RS500gaWCFServiceTest.pdb">
       <PackagePath>RS500gaWCFServiceTest.pdb</PackagePath>
-      <Modified>2015-12-14T22:15:54.377</Modified>
+      <Modified>2016-03-05T00:53:16.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSTestFramework\11.0\References\CommonConfiguration\neutral\Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll">
       <PackagePath>Microsoft.VisualStudio.TestPlatform.UnitTestFramework.AppContainer.dll</PackagePath>
@@ -146,7 +146,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Development\GitHub\RS500gaWCFService\RS500gaWCFService\Test\RS500gaWCFServiceTest\RS500gaWCFServiceTest\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-16T22:30:02.633</Modified>
+      <Modified>2016-03-05T00:52:46.853</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

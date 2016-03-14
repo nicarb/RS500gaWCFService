@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rs500ga>
+  <playlist_input>
+    <playlist>
+      <title>Demo application</title>
+      <description>an example of the execution as demo for the thesis</description>
+      <output>
+        <type>m3u</type>
+        <tracks_nr>25</tracks_nr>
+        <duration>120</duration>
+        <filterByLibrary>true</filterByLibrary>
+        <libraryID>1</libraryID>
+        <refineWithPlaylists>true</refineWithPlaylists>
+      </output>
+    </playlist>
+    <artists>
+      <artist>
+        <name>Springsteen</name>
+      </artist>
+      <artist>
+        <name>Nirvana</name>
+      </artist>
+      <artist>
+        <name>The Clash</name>
+      </artist>
+    </artists>
+    <tracks>
+      <track>
+        <title>Here comes the Sun</title>
+        <artist>The Beatles</artist>
+      </track>
+      <track>
+        <title>Goin' Mobile</title>
+        <artist>The Who</artist>
+      </track>
+      <track>
+        <title>Longview</title>
+        <artist>Green Day</artist>
+      </track>
+      <track>
+        <title>Enter Sandman</title>
+        <artist>Metallica</artist>
+      </track>
+    </tracks>
+  </playlist_input>
+</rs500ga>

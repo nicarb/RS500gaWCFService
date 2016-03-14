@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS500gaWCFService", "RS500gaWCFService\RS500gaWCFService.csproj", "{CEC1CBE5-16FE-4180-89A5-49C38AFE82AF}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{E0AEB947-0415-4DC4-AD24-2C9890B291B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CEC1CBE5-16FE-4180-89A5-49C38AFE82AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEC1CBE5-16FE-4180-89A5-49C38AFE82AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEC1CBE5-16FE-4180-89A5-49C38AFE82AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0AEB947-0415-4DC4-AD24-2C9890B291B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0AEB947-0415-4DC4-AD24-2C9890B291B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0AEB947-0415-4DC4-AD24-2C9890B291B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0AEB947-0415-4DC4-AD24-2C9890B291B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

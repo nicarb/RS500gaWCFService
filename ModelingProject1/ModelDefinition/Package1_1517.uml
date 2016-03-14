@@ -1,0 +1,3530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c24b823a-472d-4f2d-ac4c-52e340859efd"
+  name="rs500ga"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a0e442ea-e0b5-420f-8863-a946efde93d2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRS500gaWCFService.rs500ga"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9d1cd6e4-f70e-47fa-abed-b0af10d76ae0"
+        name="Playlist"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3dd5bb50-6c82-41e0-a47b-b635f3842736"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="86c5eb12-d540-442d-a80c-b1f0299005e6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="444bedfc-929f-44f2-a3aa-6573ceaa4270">
+                <propertyInstance
+                  Id="b53459c0-79ce-42ed-915a-a466c7b96681"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="680ef8a5-f0c4-45b3-a086-e525e4fab221">
+                <propertyInstance
+                  Id="15a7a9ce-050d-40d3-bb96-39122074e4d2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="97f6797f-432a-4415-bce9-f120ca4a4ab6">
+                <propertyInstance
+                  Id="b1b007ce-8966-4f60-bd9d-64ba5b596bd5"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c1b0dcd6-55ac-46fc-910b-79c5ecf3247e">
+                <propertyInstance
+                  Id="91d12abc-6e64-49ab-af64-f95889aac4d3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="180cc235-792b-4683-96c2-0f76fd5288e9">
+                <propertyInstance
+                  Id="c2607a64-f52c-4589-a9bd-3aca50c15510"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="cc6a9627-049f-4210-8c99-40d5208db110"
+            isDerived="false"
+            sourceEndRoleName="Playlist"
+            targetEndRoleName="artists"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0c0fa9a7-6ffd-48ca-b17b-310513030d36"
+              LastKnownName="List&lt;LfArtist‎&gt;"
+              LastKnownLocation="Package5_1517.uml" />
+            <description>Property artists references type List&lt;LfArtist‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1feee981-e304-4c8e-af27-f01ef9f0052f"
+                  name="Playlist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="250c6bf3-2c0b-4cc1-ab28-13fe5637b9af"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b0f6cb9e-d65c-41b2-be75-7fa2c6677d75"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23f43e7e-c44d-4960-97c6-0e39b89bc54a"
+                  name="artists"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e8c22a09-241d-4b3b-8d34-1cb65009e8a5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cfd5ad92-1244-451d-af90-6614e3e60a91"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="19583164-238a-4ad5-8975-dfc40bcbfd95"
+            isDerived="false"
+            sourceEndRoleName="Playlist"
+            targetEndRoleName="tracks"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+              LastKnownName="List&lt;LfTrack‎&gt;"
+              LastKnownLocation="Package5_1517.uml" />
+            <description>Property tracks references type List&lt;LfTrack‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c1e9fea-ae13-41d5-8abc-d6c787a5c16e"
+                  name="Playlist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b3af36ea-dade-45fc-82b3-9071624a3a58"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e47fb301-8feb-495c-a143-78517ba41b65"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cc155915-b5c9-4398-9b27-917744204aa9"
+                  name="tracks"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f7748b35-759a-46fa-90a3-32a6fed04387"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cdf1a3ab-e269-423a-9fef-20946be54736"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f50770b2-c98e-4c9a-93f9-f21e9279ac88"
+            isDerived="false"
+            sourceEndRoleName="Playlist"
+            targetEndRoleName="candidate_tracks"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+              LastKnownName="List&lt;LfTrack‎&gt;"
+              LastKnownLocation="Package5_1517.uml" />
+            <description>Property candidate_tracks references type List&lt;LfTrack‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec70971a-f415-489b-a22d-f510fe7edd0c"
+                  name="Playlist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="312c0636-f7c8-48f6-bc9c-23a7326d9aac"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1e385282-210b-4a51-9068-e71a75c31587"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b701bc55-ec5b-46a9-9f4d-694841d0aca3"
+                  name="candidate_tracks"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="eca5185e-89e2-4b0f-86b6-95e0d25aa2ec"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="825dbbb7-82c9-457f-a3eb-3b9e73239346"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c7271b7a-dd6b-42f7-ae41-0624aaa3b89f"
+            isDerived="false"
+            sourceEndRoleName="Playlist"
+            targetEndRoleName="source_tracks"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+              LastKnownName="List&lt;LfTrack‎&gt;"
+              LastKnownLocation="Package5_1517.uml" />
+            <description>Property source_tracks references type List&lt;LfTrack‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2db93e4b-c06c-4454-8a3c-72c46695dd7e"
+                  name="Playlist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="302701ff-2b93-4952-9b82-35dcee6dd91f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="83264006-0777-4b1a-a96f-36bc52a40963"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d8d89b7-794e-45fc-b910-f11ad3d29be8"
+                  name="source_tracks"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3a151039-bd15-4c56-9864-a27700c157a1"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1b660cc9-d1ef-40de-9171-243ec342a015"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1c2f1f40-632d-4faa-bfc0-9ab4213e18ba"
+            isDerived="false"
+            sourceEndRoleName="Playlist"
+            targetEndRoleName="date"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="14465578-3b7b-42af-b96d-c72b4199dd4f"
+              LastKnownName="DateTime"
+              LastKnownLocation="Package3_1517.uml" />
+            <description>Property date references type DateTime.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4bd23a21-148a-4f25-a858-f73e19480b9d"
+                  name="Playlist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="38d2428b-f8a6-4f7e-b12b-625c9bd11bfb"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="410c8274-040b-4853-86ab-726507a434be"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca4ba8ae-7769-4613-958d-b7e242615973"
+                  name="date"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c6e0ec94-8511-499c-9a57-2d4739b0564a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a7131851-aed7-44ab-afac-4da71ed3b027"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8bca1f78-9605-458d-af02-76cb6c0125f5"
+            isDerived="false"
+            sourceEndRoleName="Playlist"
+            targetEndRoleName="type"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="114d4247-2363-4ea7-bac6-6973823b7d05"
+              LastKnownName="RSPlaylistType"
+              LastKnownLocation="Package6_1517.uml" />
+            <description>Property type references type RSPlaylistType.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4a1cce2e-56ed-4d9f-8d4e-595ea885ad37"
+                  name="Playlist"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="76a68729-978f-4767-b46f-288155b277ab"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1142510f-f3c1-4205-991e-474c84e747a1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ec23bba-faf1-4d7d-8725-2f5badae790c"
+                  name="type"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5df4e65d-8ac5-4c8d-a72b-358e6a055390"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="023da16a-c006-47d4-bb17-e7b072db46b0"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="91368c64-5046-4ea9-a2a2-b3b8249e0bc8"
+            name="title"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ce6b80c2-ea62-409a-a225-5681337f2d17"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dtitle"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fa766969-0475-43cf-b458-9e73db0be6ba"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9198c09-bbc9-4b52-812a-e8de5d2fd3d9">
+                    <propertyInstance
+                      Id="6984252f-2742-4b57-a46a-9b55577ede21"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41a66625-cc91-4b80-89f6-b6d9d79256c5">
+                    <propertyInstance
+                      Id="06b9a314-3e83-45d0-bb8c-faf12a9f5739"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37a871d3-a072-4da6-999b-b0615e311e9f">
+                    <propertyInstance
+                      Id="3e3099f9-416b-4f70-9284-2f06a3dde0b4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8809e57-e1b9-4856-9367-542927d6fe77">
+                    <propertyInstance
+                      Id="b29f6151-eac0-43fe-956d-fdd71a0fd439"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a12b197c-296b-4fe2-9f41-ee46cf3d887f">
+                    <propertyInstance
+                      Id="1e529047-41e4-442e-b976-43c576101583"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bc13517-50ad-4076-804e-89a3355cd2a8">
+                    <propertyInstance
+                      Id="c4a97bf2-1d7a-4a2b-a578-cf75b7267c27"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24335273-96a8-4ede-990a-e917ee9bc65b">
+                    <propertyInstance
+                      Id="301b9842-5ac2-4ce0-85c4-73f2f46787a8"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ccc1d9e9-38b0-49a2-b9bd-fb257e8307e8"
+            name="description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8a9d8301-9eea-4863-ad6c-0a731b85230e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Ddescription"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6e4a7f7e-1fa7-423a-95fe-b4608393b478"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13c0a2b9-0087-4573-879f-bfabec81f1d8">
+                    <propertyInstance
+                      Id="f595df6a-116e-4355-9266-41d38392f3c9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baf05c45-66ff-429a-8e54-746e1fd4153a">
+                    <propertyInstance
+                      Id="d22fa897-214a-4b30-93c2-d466f3f5e152"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b72ff26-79d8-4c63-b0f6-c579af2a6d53">
+                    <propertyInstance
+                      Id="1f94cb2e-61e0-4d43-8f01-71b06eaa08cc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d89b3324-c732-492b-b73b-24d06c1c6150">
+                    <propertyInstance
+                      Id="7e98d265-9853-4e90-a58e-9999ad863b4d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55b5575b-a341-412a-b513-47b81a8279b6">
+                    <propertyInstance
+                      Id="91e81713-8c0b-4372-aae5-90dd3f393e51"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed1968d8-3c0c-45b8-82a2-b829237ecd6e">
+                    <propertyInstance
+                      Id="a41f7848-fa2a-446c-b212-74f09f6af91c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f796844b-638a-4018-9b90-3a4532b81601">
+                    <propertyInstance
+                      Id="86c13e3a-3918-453a-abaa-90c5882b43d5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="22ec530a-341f-4727-9da2-d9121089e856"
+            name="artists"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fa96cf14-0ae1-437b-ba11-8e218f2d8eab"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dartists"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="063fc64e-3616-4c1e-bb8b-f8ad1f9c5167"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b131a9f-bbb3-419b-a004-b82509794ebe">
+                    <propertyInstance
+                      Id="8cbd8662-d21a-41f4-9ed0-e2969c15fa3d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="445a086d-e71d-4fae-a5e9-5a1384105d59">
+                    <propertyInstance
+                      Id="e9e809cc-b367-45a2-b5fb-9f97d8485a6f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f826140c-a8cc-4ea1-8bc9-08a504d9da32">
+                    <propertyInstance
+                      Id="cbab9348-f6e0-4fa1-ae3e-9cdc0275b104"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f27643fa-93db-4790-afa1-0cf7c651a3f0">
+                    <propertyInstance
+                      Id="1ee1dbe5-f993-4452-b456-30f322db5cf2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="275f8861-3684-4c2e-8af1-96196786663c">
+                    <propertyInstance
+                      Id="9b8293bd-ee17-4c07-9e6b-561b393ba5d2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c196cbde-67c6-45a5-9472-b368d80e5d7c">
+                    <propertyInstance
+                      Id="214cfa4f-b757-4eb9-a534-f46fdb63a6c1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="061d0b54-906d-4441-a363-549a2c1f0f6a">
+                    <propertyInstance
+                      Id="282207aa-29e1-4337-bf9a-923cafa1c104"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0c0fa9a7-6ffd-48ca-b17b-310513030d36"
+                LastKnownName="List&lt;LfArtist‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4394966d-34ac-43be-b3fc-78de4a31a2ab"
+            name="tracks"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5c842061-573a-4f0c-b99b-aeeabed5b6d5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dtracks"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4d71c05a-865d-48ec-a900-8fc2e4d57acc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d943608-2174-42ac-a217-36a1b50ab49e">
+                    <propertyInstance
+                      Id="0d8a0f15-06ea-4059-b01c-fa4ead792e86"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6da1ea7-af02-4d47-b056-6d59576d7fa6">
+                    <propertyInstance
+                      Id="b67e6fc4-59b5-4889-b5b3-ba4ae6af1a8e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b591b227-dec7-4157-89ac-07d67969e0f0">
+                    <propertyInstance
+                      Id="947d68af-d61a-4b9d-8aeb-893d2c107fe4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="443ff505-f80e-408e-bfc9-c129cf12367e">
+                    <propertyInstance
+                      Id="8e1594ea-bf91-40e2-8999-b7821ee826a4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a5a32dc-63c3-4317-9bdd-1bf9503ed495">
+                    <propertyInstance
+                      Id="e9b809f9-c630-4ea5-a44c-272ee21bf02c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c0e7c5c-a2cc-4c12-bb0c-47276d405702">
+                    <propertyInstance
+                      Id="b2159229-b45e-4e21-aab2-9fc4b81b369b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efdd04cc-e123-4905-b4ba-f355204632a4">
+                    <propertyInstance
+                      Id="7732f509-90ed-4b13-8dc2-3af6c3969bb2"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                LastKnownName="List&lt;LfTrack‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="28acc801-a082-461a-9a42-9a06cd9ef186"
+            name="candidate_tracks"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b94eb1b9-89d8-4d82-adf5-641e48d57457"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dcandidate_tracks"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="140c6af2-768d-458a-8aef-df59a82d58f3"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1aa398c2-7c93-4ab7-b7cb-7429b045c5df">
+                    <propertyInstance
+                      Id="4c6ba718-2bf3-4516-bbb0-08551e8ca9e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a493096b-cf54-4b25-aec8-a5393207a349">
+                    <propertyInstance
+                      Id="24e9ef70-d18e-4259-968d-748fd93f6b02"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2fcf27f-9a61-4c18-87ab-dcadf2684a40">
+                    <propertyInstance
+                      Id="58220dd9-0c90-4a22-b458-772d822c66c0"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2af003e9-d2ce-4030-8f78-a8d082da8fb1">
+                    <propertyInstance
+                      Id="f6f9133f-e955-4eb0-8f13-4a3c9531d22f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1b27965-b601-418c-9de5-55066266c103">
+                    <propertyInstance
+                      Id="6a08ba2e-56ee-45cf-8d13-65d068c8e6c6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5bfef78-786c-4087-81fc-812448888d23">
+                    <propertyInstance
+                      Id="5be4436b-8203-4cac-bb8e-ff79ab942d2c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="337db3e8-54af-40ef-875b-7ac929e94637">
+                    <propertyInstance
+                      Id="7345471e-33a4-462f-9d53-db2518d9acac"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                LastKnownName="List&lt;LfTrack‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c2d96b69-8158-4d98-9844-cd272452933e"
+            name="source_tracks"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b0e3b825-f0f2-4817-885a-a2e0d864a8bd"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dsource_tracks"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="abe6db36-bf96-4f73-9381-e7566bb5e48c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7dbc6f9-b527-4c69-aa08-32f4f3656b0e">
+                    <propertyInstance
+                      Id="56128ec9-7f55-4290-b180-2923ed3bf536"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8aa5a08-33fa-4d7e-bd7c-9b4c9596eb0e">
+                    <propertyInstance
+                      Id="82421f85-1f42-4e70-a1e8-9eaf07ea0151"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea569b36-37e4-494d-a727-36dff78eda56">
+                    <propertyInstance
+                      Id="3d99578b-5738-49d0-8f16-50598a960492"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef6533f6-8544-4f4f-a35b-0e1a5275c675">
+                    <propertyInstance
+                      Id="a80e59e8-3cd8-4ef6-aafb-c01366748c55"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0d67d43-d1fa-4ea5-a8ff-02a44a0aac6a">
+                    <propertyInstance
+                      Id="8c722681-652b-4b3c-98d2-5d6562121374"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d90ab82-3e40-4be5-983a-4a18db67a363">
+                    <propertyInstance
+                      Id="799d88df-1bb8-48cd-b032-f22c1127e47f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20c3ff46-2b72-4fb9-919d-18fd431c7d5c">
+                    <propertyInstance
+                      Id="72757d6e-0d39-4b51-b78a-f66109507e0b"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                LastKnownName="List&lt;LfTrack‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7d3d1043-a895-47dc-9ad9-854febc75287"
+            name="lim_track_nr"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="98e55305-85e5-490c-a4b5-9a8bb6c841f0"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dlim_track_nr"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="31d4759c-342d-46d5-b845-4dc62a08e27a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b5cc819-84f5-45f8-827d-7c7329ac1c0b">
+                    <propertyInstance
+                      Id="5edcb3b4-d6be-42e5-a24b-67f5290f5f10"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="955bca3b-57b9-487d-9dc4-c4a175948730">
+                    <propertyInstance
+                      Id="d473b7fc-1233-413f-8ff7-1b22cd36c96d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62228913-9214-459a-b015-da4c11a346a6">
+                    <propertyInstance
+                      Id="ad3d22fb-b571-469f-b05e-c0642e4dbe21"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1764bf7a-f774-49e0-9957-ca61d9da4420">
+                    <propertyInstance
+                      Id="3f2cfbf7-aa0f-42cb-88ec-aa8242d4d1f2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c338003-9281-472f-a01f-ce27574247fd">
+                    <propertyInstance
+                      Id="6944e579-1abc-4ba8-a1fc-72d57394ee6e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55263bde-c000-4731-a173-585c428a9f88">
+                    <propertyInstance
+                      Id="8632a414-1a92-4ffb-ac4e-cb35c4c573a9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03984c18-42c7-4b36-b6a6-48b99ff46f04">
+                    <propertyInstance
+                      Id="6e701518-b5fc-455a-aed1-dc5fc5e71ee5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="129d4331-3228-4847-904b-b9a780ab2751"
+            name="lim_duration"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4c992b7b-ee39-4b4c-818a-d7a05ae24c8b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dlim_duration"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7f938cc3-c180-47c0-8722-54100ec67288"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c67864a-d50d-4bbc-8de0-7a2b733e96ae">
+                    <propertyInstance
+                      Id="4c445086-8b90-4567-95e2-d87ef037d84f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="beceaf0f-8d5a-47da-b0fc-32dc565de255">
+                    <propertyInstance
+                      Id="9c102ef1-f93f-4009-8ac2-fcc92168b31d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7062dc7-f7de-4fb2-957c-24443abe7f3b">
+                    <propertyInstance
+                      Id="96b74138-830f-45b9-bb44-768cafb8ac42"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa548853-2b39-4f43-b3fe-562d7e97a04e">
+                    <propertyInstance
+                      Id="8f364f49-de60-41bb-9f2a-690111022545"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21e14823-2cfd-4f68-a271-864b015bcf65">
+                    <propertyInstance
+                      Id="c8256063-e46f-407b-9b10-a18ca104dedf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e7c2153-c842-4844-9415-cb90b83d826b">
+                    <propertyInstance
+                      Id="844e3944-ae7a-4aed-b987-1930f33027c8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9964273-c609-40e8-a0f5-9ece8a988a18">
+                    <propertyInstance
+                      Id="2890951b-4c8d-40b0-90f2-35c44d1c0a1b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="86954d7f-c4f7-43cf-a1d8-16d136eaf4f6"
+            name="do_lib_filtertering"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd71f01f-a4eb-431d-aae5-8051365db45b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Ddo_lib_filtertering"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0705e7f3-628e-4873-b1f8-a3d7c730d9d1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cfa2033-db4a-4f0a-9c19-b7548a7f254d">
+                    <propertyInstance
+                      Id="33c23d97-fa7d-47bf-a71f-911442eba617"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0016074-6364-4f78-b723-7944cd468c7a">
+                    <propertyInstance
+                      Id="5b1cc0d0-662e-48cd-a9e8-a65ad95de95b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cc3d5a1-5d37-4f61-b7ee-0f443a1c8169">
+                    <propertyInstance
+                      Id="62052821-695f-4c3f-9f1c-27fa32ab8677"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8eb7829b-aa58-4cf2-a16d-b5219337f320">
+                    <propertyInstance
+                      Id="b223961e-de7c-4276-9dfb-32eb8fb9616a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9825119f-5fdd-406f-a7fd-33bb8ea579f6">
+                    <propertyInstance
+                      Id="e2d87b7e-fa1c-4b5c-bf69-97a08bacf4ff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4fced72-e8a6-46b5-a0c8-71aea46869cf">
+                    <propertyInstance
+                      Id="c9d66902-f5fc-4860-92eb-2995c7b49810"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a226c7a-c813-4f48-9fc4-0ee0eb2999d1">
+                    <propertyInstance
+                      Id="41a79c71-93d8-4159-b3ef-cb002c3c9f97"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d2cb164a-5030-4a6e-9778-da7fac5b7d85"
+            name="do_pl_refinment"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="21d45c70-4f55-4aea-ad0f-18bdf778ecea"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Ddo_pl_refinment"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4437b506-2c80-41a2-a606-de2d4a901831"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72914f9e-b7eb-4a46-b910-158ee4415660">
+                    <propertyInstance
+                      Id="5bf61330-d6cc-48e2-8f1f-1175fc809ce7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f8677d8-b217-4e63-9270-27d68d959dda">
+                    <propertyInstance
+                      Id="af9e5400-9f66-47ea-9a4e-54667c19cedd"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f7471d4-0848-46bf-ad7b-e428033128f7">
+                    <propertyInstance
+                      Id="eb059cb3-73aa-4953-9564-a052af84b93f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c024dd2c-fb30-473c-94aa-ed55ff36c747">
+                    <propertyInstance
+                      Id="77fe7577-fa20-4ddc-b847-7e89df0d7951"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8dc4f72-e529-40ab-bd79-77e5cb466929">
+                    <propertyInstance
+                      Id="ee736e0b-eb43-4f46-9e16-7eacde02eecc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9af566a3-7569-47e6-abd5-f92828f1d815">
+                    <propertyInstance
+                      Id="6d1e8498-275f-4b25-97f6-d98af4d5cc70"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80c613c5-20ee-4c44-bfa3-58d78782f35f">
+                    <propertyInstance
+                      Id="3b06657f-3dca-4cb0-bcbe-7a4c7e89c98d"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="776f7937-5ea0-475b-aa96-24eded67879f"
+            name="source_lib_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="93a7239b-8b10-4e0a-8b71-404d322a87e6"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dsource_lib_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="46bf5403-a445-4e24-9970-49d84e3efad4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfded61d-4ef9-48fa-891d-bdc1aca9e17f">
+                    <propertyInstance
+                      Id="133740e6-ba32-4f1d-be18-54d99fb88ba9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dd96141-ce7e-4b9e-a090-0209a73fced6">
+                    <propertyInstance
+                      Id="611f60a5-f5aa-4f2f-8da2-563bff19fa4f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b147d9c9-ec8a-484e-8a8d-2925a871dcf5">
+                    <propertyInstance
+                      Id="05a5e1ba-2a63-4753-84e6-98eebd7529a7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f978db2-2171-4681-a4b4-1e4609010154">
+                    <propertyInstance
+                      Id="063cc549-03a3-437a-99a5-36a8ec818de4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0240d7cf-e258-419b-9528-458e0f9c83ec">
+                    <propertyInstance
+                      Id="a40fb2c8-ff5b-4cc0-abad-82e7ea06acaf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="262a9a3c-70cd-4d12-baf6-22087a4e28ee">
+                    <propertyInstance
+                      Id="4a793c02-7309-45aa-969c-bbdb37216dd9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="901b7ba4-570a-410a-8f4d-f01f7e994e93">
+                    <propertyInstance
+                      Id="9ff3c35f-2ce1-4a0d-aa9c-5a206a817be5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b3a6d96a-a30c-4ec4-a518-60be964851ae"
+            name="date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9690708c-4507-4398-a59f-b4f81f29c6bf"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Ddate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d861286e-bcac-40ea-afd6-8b7e359743f4"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d3b8211-d836-401a-8412-c4a73d0bcc6e">
+                    <propertyInstance
+                      Id="35508c56-365a-4f2d-92cb-c2b1d4bbc69c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e30a1aa6-d40b-413c-98f2-373ea94caabe">
+                    <propertyInstance
+                      Id="febaa0db-0d1e-438f-9bb1-66ec1cd64da0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70c51c09-6311-47e9-af2e-9b6fa0ed3e3b">
+                    <propertyInstance
+                      Id="f48db462-df0e-416e-9aba-3c5ea370cd28"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1e08b6c-e943-4f9d-9431-b0529a45e6fd">
+                    <propertyInstance
+                      Id="ba6a2626-6246-44db-8405-5db2f8e5055a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9755af4b-d48c-4d6f-9218-12add9b0ec42">
+                    <propertyInstance
+                      Id="d3e939f7-d9dd-48aa-b9ee-5efc9b10057e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa75256f-1c54-474f-add5-ac004f3a5940">
+                    <propertyInstance
+                      Id="4b28156d-8625-4cf6-9c5d-d0c2215ab948"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d43ab5f-fa9f-4146-9149-adc1ea5e6f42">
+                    <propertyInstance
+                      Id="0caa59a9-4dc8-40f3-81b0-fee73e89d507"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14465578-3b7b-42af-b96d-c72b4199dd4f"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package3_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="346e19e5-4ef6-489a-a9ed-ae8cb1451fee"
+            name="db_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="68aab8ae-62bd-43a8-8b48-86080dcb8eca"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Ddb_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5a7b3abb-30a7-4111-a2a2-f5471adea0af"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e7d4607-ec6f-44e7-8224-8791f16ef030">
+                    <propertyInstance
+                      Id="32dec800-f887-4d38-b5e2-f45f98bc64de"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="456e8823-1eb8-4d5a-a14d-b19a124d1851">
+                    <propertyInstance
+                      Id="7fa95c7a-9ab5-4cea-8a07-6f108e1fca0a"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c702a1d8-3fc2-4a1f-80d9-76888975f192">
+                    <propertyInstance
+                      Id="600bf0d9-11ae-49b3-bdab-f0fcf9388867"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df71b472-da2b-4cfe-9bc5-7f67e91b20cd">
+                    <propertyInstance
+                      Id="19a81a24-30ee-4eb6-b3ae-f03b6a2ab89f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adb395a0-fa6d-4d44-b9fa-359ce11ff7b5">
+                    <propertyInstance
+                      Id="2eb629d5-e33f-4651-99ac-ccf8e4fe91d1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f82dc3f-d383-4745-9235-4e815409267d">
+                    <propertyInstance
+                      Id="43c84b85-b19f-4fcc-b418-de15722b39e4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d21c483f-bc82-4c18-b318-2cf61a6eb04e">
+                    <propertyInstance
+                      Id="21514307-8d5e-4987-a55a-dfb3910237a7"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a3b48735-6e29-410a-994d-d2284fb83cf9"
+            name="lf_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="28952d15-b99a-443b-9d8e-f57f7c332352"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dlf_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cfc33395-beac-41b8-b33d-879e83b863c6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5b771ee-e5dd-417f-b92a-8c26b2d46367">
+                    <propertyInstance
+                      Id="3eb07f77-7ff4-448b-9748-cd14cc784782"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70335eee-8d92-4b55-861a-c4212547ef78">
+                    <propertyInstance
+                      Id="f666b67e-ab71-4abe-949a-88d2eda5e85b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac77f436-365d-41a7-9ae5-935308a6a3d7">
+                    <propertyInstance
+                      Id="05ed77db-4c9c-4357-8b4f-e10b9692aa8e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03d2b31d-ecb8-42ae-ae1c-a922c550c716">
+                    <propertyInstance
+                      Id="3647684a-85f7-4c99-9037-f953ca122d8b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d423f0c-c914-4eff-9855-ba79a654ad16">
+                    <propertyInstance
+                      Id="aa707df9-cd25-45e9-af61-3dc635862947"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="583994a6-0371-410c-be40-5bcbcb2dce06">
+                    <propertyInstance
+                      Id="c0bcdd35-5fbf-4f62-bcfb-e58f730ca826"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e38afca6-9d02-434b-bfc7-1de170a6f9d6">
+                    <propertyInstance
+                      Id="ee4e5a45-aa8d-4819-ae4f-577afa86ad0f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="78349e44-430a-416c-bce5-e6dfd3ba18cd"
+            name="creator_url"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cf8fa7f5-d41f-4d19-8d31-b3dbca51168f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dcreator_url"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="25f98fad-8b3b-40e2-bfea-ff0712af4aa1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd9e0ba3-4ab2-49c6-bd6c-fb0d773da2c9">
+                    <propertyInstance
+                      Id="71e471d9-5cfe-4639-93e9-2ddced973477"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="310477fe-1bc3-4bb9-88f6-daf488c8bb72">
+                    <propertyInstance
+                      Id="d581ff1a-e58f-4c52-84a5-d3056b020093"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11a0cf3b-6f21-492a-a835-05cd2c737f83">
+                    <propertyInstance
+                      Id="105f332a-e198-4e65-abb6-625b8ed50e0c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="430f0506-a4e0-4acf-a440-2713c3feaddb">
+                    <propertyInstance
+                      Id="23b95dc0-26be-4b23-ac5e-ac788cab7623"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0b26b31-5892-4e40-999d-5f64ec7e87df">
+                    <propertyInstance
+                      Id="f4c2ea67-2940-4d9c-8ab2-5c7b73a4a078"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f16b5185-6397-40af-9076-dce7e906883e">
+                    <propertyInstance
+                      Id="63faa28c-78f0-478b-87e8-ff964159d0e3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94716578-7957-4ea4-9538-691da78b3926">
+                    <propertyInstance
+                      Id="31e485b7-cf49-4d79-a58c-f7b0228833e2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dc4a82cf-b4d6-4acb-a323-5a09fd7a6949"
+            name="url"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="68505d35-fb3c-4efc-b008-d908743b3543"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Durl"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e0c882b4-ad71-4a37-bd83-f531cb1e5a39"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a722dec9-4c91-4b83-94ed-1861e59555d6">
+                    <propertyInstance
+                      Id="a71425f8-c2ca-47ae-9bc0-d5871ac6389a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cec9e3a0-6fec-498f-9968-f6a02245f0d0">
+                    <propertyInstance
+                      Id="82673d5d-704b-4913-98c7-3eef68231123"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a2c260f-6170-49e2-8c48-ad7bfdc856d4">
+                    <propertyInstance
+                      Id="fe42704f-a1a7-40bf-b135-058695ad1862"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b66ae49-027d-44ac-bb19-60e8f579e1a1">
+                    <propertyInstance
+                      Id="efaf63d5-f326-406a-b484-5bedf0c2c29b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f5031c9-37a8-4448-9abb-9af1379d2f7f">
+                    <propertyInstance
+                      Id="669aed15-a473-43bb-a6e9-6d321e0ad47b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="118e67a2-4fc8-4b96-8672-2cdffc3aa0a5">
+                    <propertyInstance
+                      Id="9b2cb69a-d512-4e48-8721-86dc267062d4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a69d4738-a64d-4511-a6dd-ef86112ab7b3">
+                    <propertyInstance
+                      Id="d29a5c45-e0ed-43af-b409-d8ef72058055"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3d49feba-5ba8-4025-b4ad-0cd8a978e100"
+            name="username"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9e7b5c15-4681-4f6b-954e-7f46202b945b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dusername"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="43d2bb61-5209-4f49-b705-d09333c974cc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a77dd0e-6f47-44a0-bcfa-8dc2a92e2903">
+                    <propertyInstance
+                      Id="22bf1cc7-f8c8-410c-864f-0d85926a2774"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="385203f3-bb52-44ed-b5c9-a4e895afc8ef">
+                    <propertyInstance
+                      Id="8559fc13-514a-4710-b484-a8c6efd96364"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ba1ff91-8369-4fb4-a99b-17699741b137">
+                    <propertyInstance
+                      Id="840972fc-71cb-4e60-b9e4-d85cfdd5a551"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67c81af5-1298-4aff-8b40-d57a566eb39d">
+                    <propertyInstance
+                      Id="f9fab143-5e57-45e4-b063-cd602cc395a7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b353979-891c-4d7b-9be1-2b90abf45a39">
+                    <propertyInstance
+                      Id="8b025186-4dfe-46be-a7a5-27227192392e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77d638b2-1975-4061-83a3-5282b93b2776">
+                    <propertyInstance
+                      Id="c803f836-ae37-4caa-affb-d39b69674300"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fb4ac38-f95b-45b7-8d46-d39ebca605d4">
+                    <propertyInstance
+                      Id="38aae084-8357-4ea5-8430-14ec48ed59dd"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4c828faa-55ae-465e-b373-c58a854faa17"
+            name="type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="31152e7e-6979-4f7e-bc35-63087487ae39"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3Dtype"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ec89301-a5d3-4cdb-9f97-da9938995260"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd3ab5ca-de27-4b14-9955-8da4ff7c4086">
+                    <propertyInstance
+                      Id="4259b44b-2de9-48f4-892b-fd2ce24fca76"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="117bb338-72b1-47eb-87b7-c5d4c4e0fa93">
+                    <propertyInstance
+                      Id="da02f700-323e-4d7f-b18f-e91b6acefba3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7abc6f1e-9cfc-4011-ab59-efeeca144060">
+                    <propertyInstance
+                      Id="c2885fdd-7e57-4fae-9ff7-3facaacea138"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d65e4249-a1d5-4488-8670-e15bd43c0682">
+                    <propertyInstance
+                      Id="8759cc43-c49f-4eeb-af49-9396a3a5cde1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a43137ac-5b70-4f85-a9a3-b2fb7775a256">
+                    <propertyInstance
+                      Id="9e3b4c91-7c68-4925-94f6-ce9c16b07e32"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="522b406d-a38c-4505-a56c-034910b98970">
+                    <propertyInstance
+                      Id="cfa9bd2d-82a2-4165-8815-de87651615c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44a6aee7-2472-408a-ad74-8957ac949146">
+                    <propertyInstance
+                      Id="2617146d-b8cd-42a7-985f-6e7b41216326"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="114d4247-2363-4ea7-bac6-6973823b7d05"
+                LastKnownName="RSPlaylistType"
+                LastKnownLocation="Package6_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f8dfdd9c-a0b7-45fe-b534-6778c6187e35"
+            name="_title"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c9727159-5dab-49d1-ada4-095a109a0c81"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_title"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="685ce828-79f2-4bbd-b3d2-edba74047aa0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3984291a-fb97-40b5-8466-f2ec926c4c9d">
+                    <propertyInstance
+                      Id="e6a5381c-e0d2-4392-b51e-348238ed8a46"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46f46e22-5c2f-4947-a6bf-c95f7a8b1483">
+                    <propertyInstance
+                      Id="e9aee8d6-7693-4a07-bf88-6ac1293c47ce"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16b14e46-5978-4090-bd96-e07269a9763e">
+                    <propertyInstance
+                      Id="dce1e138-4bf0-486e-8faa-7b02ce1d007a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc6e0b6f-e51e-4c14-ac92-84aa3151beb7">
+                    <propertyInstance
+                      Id="fea88888-4729-4358-8c82-fddcb73832e0"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab8c63b7-5c48-4b03-85d3-100ec77e0e9d">
+                    <propertyInstance
+                      Id="f6b1e3ba-4f01-4a5f-8346-0a14ab50c429"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e0678556-42a2-4ba6-8f56-423bef57c629"
+            name="_description"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d77c70d6-cc14-47ea-a65b-824f8cb65b30"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_description"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0c8a2699-4be6-4653-928a-4e9452614028"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d99a4fd4-3da1-4356-8de2-fca170183137">
+                    <propertyInstance
+                      Id="b320d190-73f5-4707-950f-abbec52e6efc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61c8376a-c17e-4aa9-b1e7-b29cb7ae42d7">
+                    <propertyInstance
+                      Id="c277dee9-d8a7-4f1f-8e71-9c02152f1789"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f171d61-75a9-42fd-87df-72beacd6b9db">
+                    <propertyInstance
+                      Id="559b5bb9-c2c5-4d24-aca3-71f7ffe89e07"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76810dc2-bc09-44ec-8e47-684d2f31d2ed">
+                    <propertyInstance
+                      Id="a2b52d69-afd7-4fc6-a45c-38f0ee43fa6e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbcd7c2e-d000-4261-a76a-40708639f133">
+                    <propertyInstance
+                      Id="7909687f-d259-4500-a9c5-ef99c55326a0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="15d27872-cea3-41a4-bef3-92b9b6ba74d9"
+            name="_db_id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4ce12cac-9938-4fed-90ea-3c5fee4ab111"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_db_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5c144abb-a985-47a6-aa65-47940fd045ce"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="794d5014-b40f-4386-b1ae-942ecf9f9443">
+                    <propertyInstance
+                      Id="a131cc6d-2824-4e50-a7a4-e3d94f751360"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e17f9ee5-4ba6-4ad3-80bb-7506eac426b9">
+                    <propertyInstance
+                      Id="597befb3-3b23-4d3d-b7f4-9176a5f51bb9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="974ace22-13fd-4f6d-8617-e8931c8a303a">
+                    <propertyInstance
+                      Id="1a0f8ed9-0cbb-4498-a75c-167ab8eae02c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fc256f0-2b22-4218-9df9-004a25d4fec5">
+                    <propertyInstance
+                      Id="5319bcb9-6608-4fb5-8459-49fb7c60dddf"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fea0a597-4b5c-4e0f-b6e4-dd23b1a0a283">
+                    <propertyInstance
+                      Id="5a6fc417-a592-49ab-847f-c209448a4cf6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="097d6de4-80fe-458e-8a4d-0423f67f7403"
+            name="_lf_id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="836fd986-0918-48a4-b993-1d698fc62cf3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_lf_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b710b85-9c7e-42fb-8966-e11d00ab25e3"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b38d5ec-f599-46bc-93a4-52f7f7821356">
+                    <propertyInstance
+                      Id="d3bcc01c-9342-473d-a011-b229342c8d4f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2e98578-0bd3-4e44-8a78-af84fa8759cc">
+                    <propertyInstance
+                      Id="773fd52e-bf2c-4fe4-a0da-8c5e21f1c811"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9238fc33-4cd1-4d59-ad02-f03f11857aae">
+                    <propertyInstance
+                      Id="a8bf9d6b-c2cb-462d-812c-186e5c3b9a9e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="847ef406-f13a-49b4-8798-a654f1204083">
+                    <propertyInstance
+                      Id="b9287724-d756-4c00-bc8d-c4631a1bf0d7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bc1cfc8-8481-4bbf-ad86-e01020bffcaa">
+                    <propertyInstance
+                      Id="33a64fff-1642-4826-9fa9-b0d3fe5bebc8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7d25d0b3-459e-4c5c-9bb3-f3755f908097"
+            name="_date"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3f56ec61-e151-4123-8f13-3551c1b95176"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_date"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b2ea036-87de-47ae-8d44-36af39b04ccf"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce9296d6-1326-4c90-9b00-b842add5ecd0">
+                    <propertyInstance
+                      Id="fb9eb151-7d9c-4db5-9a66-e6a32af42f46"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ac9aa56-732d-4617-aa82-e841599a76bb">
+                    <propertyInstance
+                      Id="15898cd1-4c83-404e-9a9c-7f4220d33039"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a53e15e-88ad-4112-8125-824e64f8426a">
+                    <propertyInstance
+                      Id="19745c83-95d8-41f3-891f-edd489a96271"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e826c83e-cb3a-4d2f-bb7b-bbc79d3b8b7a">
+                    <propertyInstance
+                      Id="88ea0676-d9d2-4340-b740-06915b18933a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="896b489e-7cf1-4ca7-86fa-414030ee2722">
+                    <propertyInstance
+                      Id="044f7826-ff56-4603-bd21-d84f0ee53855"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="14465578-3b7b-42af-b96d-c72b4199dd4f"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package3_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="565da913-0a3b-4e3b-a9c1-2d06138ba04a"
+            name="_artists"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b26357e3-2f9d-41c6-bee7-5cd1e7501bd6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_artists"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2e3daef6-e8be-4f09-81b6-72fbc769e785"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3782aa15-a6dd-4e61-b3b2-0f2518a9dcac">
+                    <propertyInstance
+                      Id="7814e001-f799-449e-b3fa-29810f6ea08d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d6f5ccc-a22c-42f2-ab66-2833449a1811">
+                    <propertyInstance
+                      Id="c1b17a14-b589-4f45-ae60-a97ff0a112f3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ebef484-e162-4ffa-91c4-542a75d93736">
+                    <propertyInstance
+                      Id="ec46f908-cab5-4121-afcf-0108e881374f"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89d47ae7-ad84-4827-ba9e-7b7b4a72c27f">
+                    <propertyInstance
+                      Id="4cbb2359-47bf-428b-8b15-95f499b2e03a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f29beea3-8cd9-47dd-a882-c299df7e5ebc">
+                    <propertyInstance
+                      Id="ab7bd488-d4f6-4b50-8422-dfc6836870de"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0c0fa9a7-6ffd-48ca-b17b-310513030d36"
+                LastKnownName="List&lt;LfArtist‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="69ed9c65-56e4-4b41-8d75-1629ff80c62c"
+            name="_tracks"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1711cf97-3b9e-4ac1-8f7f-f78e629ba62c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_tracks"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="49e5fb85-4fc8-41c1-a6ca-c3cb50d5bb46"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bad33a8c-a305-4e17-bb6b-2a85cc0ebf66">
+                    <propertyInstance
+                      Id="e29d7caf-d3f0-49c2-a69c-37c0210c1333"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5041cb41-b0ed-4d99-b349-407e648cbad0">
+                    <propertyInstance
+                      Id="c00cde59-bc26-4a01-96a6-c53eb0a4bf99"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d049209-a92b-4834-bb57-e3206a374872">
+                    <propertyInstance
+                      Id="b7f1e716-670b-412c-b7cf-b78545dac618"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c51d8b55-888e-43bc-84fd-6fe4f07cdd3f">
+                    <propertyInstance
+                      Id="68da0e0c-68bf-4407-8dc3-7a7154e1fdf6"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ede92ee1-9991-4f9e-8d47-6167972cd586">
+                    <propertyInstance
+                      Id="1dbccb52-0680-4c1f-9eb6-fbe7c56584fb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                LastKnownName="List&lt;LfTrack‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="98e52ae3-92fc-4b55-a802-2cff44cff608"
+            name="_candidate_tracks"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dda9607e-d7d5-4507-96aa-88ddf700ab6b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_candidate_tracks"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6f057421-7e96-4e79-8389-c16cf6ac9d4f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d610bc26-3610-428e-a6d2-0c857c73b4df">
+                    <propertyInstance
+                      Id="71a0e653-6052-40ca-b87f-5d59d454b66c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ce19f9a-dfc4-40cf-a5a9-1cc92a02935b">
+                    <propertyInstance
+                      Id="a9c19d07-8a58-4770-b5b1-1fbccf83b6fd"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b05813c-ddec-42a0-a841-b81cbf1c7e73">
+                    <propertyInstance
+                      Id="119aac76-401c-4b17-bd89-d0f9899d79ee"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b72de67-f3ce-407a-9011-685a19a890d7">
+                    <propertyInstance
+                      Id="6073dea4-a457-4ebf-9b40-b6b592cc6c7c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="152e89e3-a85f-4759-b2b7-f724de688202">
+                    <propertyInstance
+                      Id="b306d189-850a-4646-a9ee-64930112586c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                LastKnownName="List&lt;LfTrack‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4482cbed-4fc3-4e26-8e2c-5c6f92e0478b"
+            name="_source_tracks"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0620682b-1570-4b49-8d07-cc654999ba76"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_source_tracks"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3d194b14-9c5f-4d4b-a70e-6d2c040e316e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6cd3145-0e01-4c63-9625-6b729f9d9527">
+                    <propertyInstance
+                      Id="9788cbac-2fc9-4b9d-a824-5dffae54f385"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ac7fa9a-a2c1-4247-bab3-fb7853edfe66">
+                    <propertyInstance
+                      Id="7cb5ec44-beef-4665-b5b5-cd790ce5677c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ace29905-3ab8-4c40-909e-eabbc53a71ea">
+                    <propertyInstance
+                      Id="b9b07f71-c6c2-431e-847f-315d4fd59ded"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a71ee34-f17b-410f-a5fc-eafeea6e76a1">
+                    <propertyInstance
+                      Id="924c26bc-93dc-42e0-9812-924eca19e398"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2035b031-d406-4d6a-b134-49ae92f0cbc8">
+                    <propertyInstance
+                      Id="c77e1e88-ca22-48e6-8344-3aeab4fd26e9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                LastKnownName="List&lt;LfTrack‎&gt;"
+                LastKnownLocation="Package5_1517.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dd7370ee-2a6a-46ac-85a9-0e975f2a2c73"
+            name="_lim_track_nr"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="60417c7c-5e0a-4534-9536-3d66ce2550f8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_lim_track_nr"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eb097cdd-f52e-48bf-865e-5d34d3e61f0a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21799706-6496-44aa-9f21-4d700f29c851">
+                    <propertyInstance
+                      Id="df566b24-e242-4c2f-9b9a-c0bda6eb2558"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73c4a094-8748-46bc-b588-92f5bc347d01">
+                    <propertyInstance
+                      Id="8c680c9d-a7a5-4f3e-bb9b-96af753e46ac"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e6f39be-e16d-471e-99c8-3549c050ccf5">
+                    <propertyInstance
+                      Id="b876076e-8c89-4267-b06d-c282c8b9fea1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d38f6b4f-99c7-421b-96e5-30e67136cf68">
+                    <propertyInstance
+                      Id="cf3d7ccb-4122-46ab-8ae6-3d796e556e3e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b76aa2b8-b947-4a4a-bff5-4e4d54f45af1">
+                    <propertyInstance
+                      Id="3f504a41-d5b3-4e3f-ab86-bce21f8e8364"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="39a5993b-33f5-4198-b088-e8e39314bbc6"
+            name="_lim_duration"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c1af5b64-1869-48af-9e7c-b94746f783e2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_lim_duration"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e7752285-0ec9-43db-a6ce-86655f5a833e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c362a1e3-2ad5-463d-9868-225428525491">
+                    <propertyInstance
+                      Id="b4afea06-76c9-47b0-b40b-88ae49881aff"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29f3dfde-ccbf-405b-ba31-4cae3d224c30">
+                    <propertyInstance
+                      Id="b4bae63e-3634-4753-84ca-f045b8597020"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a39193aa-6e4c-47ea-9e11-274dd1b965da">
+                    <propertyInstance
+                      Id="bf56cdf3-2330-4942-a808-a0185e04c982"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b6333e9-89f9-4aed-b3e0-a1b3e4c0858a">
+                    <propertyInstance
+                      Id="c7697728-9950-4940-a46e-be7d0286ad2b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="606b3f4d-797b-4277-8c61-f2ef62316712">
+                    <propertyInstance
+                      Id="e1e634d3-cf36-43b1-9956-1278fb982f31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="98dc9756-5399-4049-a639-1ff713383ee3"
+            name="_do_lib_filtertering"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="60983d80-79c8-492b-85b8-946aef663a1f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_do_lib_filtertering"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="74d940cf-8d4b-4e04-8615-8e5aea64999b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c791f9f7-5cf3-483f-a113-60e8f7251670">
+                    <propertyInstance
+                      Id="127d0933-6954-44ab-87a3-483c5bde9f4d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dd6e009-019a-4346-b123-a8a61c156411">
+                    <propertyInstance
+                      Id="3b4c0a66-0aaa-4995-bced-a4757ca411ee"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a38fbcd1-633a-4a82-8086-c80d96489303">
+                    <propertyInstance
+                      Id="a30e3964-4899-433a-9253-887a4b11c786"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="feb35a6e-7527-4512-ad0b-8447c81e3b49">
+                    <propertyInstance
+                      Id="9bd61f2a-4219-4434-afce-8a1e7039a7d4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5adfbbb6-a717-4e3a-ac0d-a9c8f56cd1dd">
+                    <propertyInstance
+                      Id="9927d048-9b89-486c-a858-84e0b67212d8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ffd28912-ed97-4429-bea1-4159a9a4efc0"
+            name="_do_pl_refinment"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="727803fa-fb14-40db-a8c2-cb2d0746be9d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_do_pl_refinment"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e00be829-4ae3-44bc-a317-cb841f707a7e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="244bb5d5-10de-43b6-b99f-5fcb8d4b848d">
+                    <propertyInstance
+                      Id="c4b803b8-365f-41b7-95c6-0095efab36ec"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf68a013-b6bf-4673-89ba-f9e0baa2e80e">
+                    <propertyInstance
+                      Id="fa2784c0-7183-4459-8d2a-9075a2b59f0d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b2dac3c-c8ed-4caf-8c3a-bd23b601a878">
+                    <propertyInstance
+                      Id="2a34add2-76f2-43d3-b713-7f18a836175a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="553ccf05-8b9f-4d7c-a2fc-10877ad9e62b">
+                    <propertyInstance
+                      Id="d8410881-c62f-4916-a6b6-07ce2b8321f8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f63c3905-74f8-4e4e-b42e-5641912bd4d0">
+                    <propertyInstance
+                      Id="4e508500-4e96-4c0c-baa8-483eac84be42"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="73857e05-e8bc-4b17-a6b2-7110270f14f2"
+            name="_source_lib_id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="064e81fa-461b-495f-a873-7d754a29146b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_source_lib_id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f3851ac1-bf1f-49ad-8702-f0ec529e417b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3490338-01df-4540-8a34-7eb63f80ba5b">
+                    <propertyInstance
+                      Id="fbeb5b90-df5b-4df7-8ce2-ee5208591e6a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f03c101-2a08-4182-abe1-8a63523802b7">
+                    <propertyInstance
+                      Id="6cfbccbb-a17e-47db-8a09-fd09e8d472e2"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43b7a75b-7c7d-4c1b-9b77-e5813eb69bb2">
+                    <propertyInstance
+                      Id="a4c77fa3-3800-4261-a176-f5fc8c78ec11"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2f721ae-d4de-4261-8265-b168511436fc">
+                    <propertyInstance
+                      Id="ab84f7e9-4432-4f23-84a9-f291bc90d235"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc498e7e-9967-41f2-92d2-dcf198b18b4a">
+                    <propertyInstance
+                      Id="c3387cdd-046f-4266-9a33-3e8bfece9203"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e69835b6-36d8-4231-9e2b-05dae2d50d16"
+            name="_creator_url"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b7e98cdd-c287-4637-a116-d5dfe4ff464f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_creator_url"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1f03b0e-f650-46ac-8c42-30c65153783b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ab109a4-6c00-4cc2-8c30-a66dafc50032">
+                    <propertyInstance
+                      Id="99df1e65-9157-4794-bc57-f82d61b0594a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d26ce1a6-5385-4865-aa8b-df5f8e3d562d">
+                    <propertyInstance
+                      Id="7d447ea1-06e8-4502-b7c3-285ab3d0a4e4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60b5ba33-ab3f-450b-9568-bc25c8f74503">
+                    <propertyInstance
+                      Id="60694730-13f4-42e0-b6b8-2b22fa904d3b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6adde40b-a527-443e-bdac-f1c867e827b0">
+                    <propertyInstance
+                      Id="29782b8f-ca90-4a45-83cc-7fb880ee5805"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c00cb30-ce72-40f9-96e5-bdedcb2715c3">
+                    <propertyInstance
+                      Id="0b775f8b-777d-4b2a-9708-249e8941ee24"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="25d2163c-e5b3-498b-a8ce-126706e51d15"
+            name="_url"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="db7fb294-cabc-4629-982f-bfde132e8c0c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_url"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cd169197-0f00-449d-b364-8d1965ebd2b9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e9e4207-df2b-4bac-84e2-d3f8e0d25811">
+                    <propertyInstance
+                      Id="843c5183-84f5-4db4-803e-190b981b03c2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6d749f5-b450-4fe2-858d-9136758880f6">
+                    <propertyInstance
+                      Id="1ca0f148-3130-4516-9538-fd521b8e5e91"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6949680b-bf51-40b6-a363-0eb4c00e517e">
+                    <propertyInstance
+                      Id="af8c3872-a715-4712-bff2-80b7b14b7b43"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="961d324d-a775-4d91-b51f-92472dd4cb9f">
+                    <propertyInstance
+                      Id="c3b905fd-7015-45c4-9b15-60896e5dcdda"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1e1ef1d-123e-4c4f-b619-088b6207cc20">
+                    <propertyInstance
+                      Id="6e21688f-6e93-4157-a74e-846d723d6f82"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9dbfd33e-2c65-491c-b60a-97c648f5a1e4"
+            name="_username"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3fcd3359-27cb-4931-8417-6cbbdeba9fc7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_username"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dafd8da1-73b4-4d3a-9d28-6ae95539ab8d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a43f756f-da1f-423d-ada5-a28faefbeb67">
+                    <propertyInstance
+                      Id="3c0db3d0-18d0-4e97-8e22-6ad415c8df15"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afb110e0-f720-4d28-b74e-a10833a13576">
+                    <propertyInstance
+                      Id="2c667763-880c-46a2-960b-0a48d57dab08"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d04f8a64-edde-4b3e-a7bc-b23f666a5d8c">
+                    <propertyInstance
+                      Id="b3d898fb-1d75-43c6-a66a-ffbd84ab22ea"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fcfbb32-c614-4a3a-a406-4f70d1f6ac01">
+                    <propertyInstance
+                      Id="c0ce2a02-fed3-4fc5-a690-ff1edfe73531"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86a8e6c3-ebf6-403b-96d9-ac63704c77de">
+                    <propertyInstance
+                      Id="81fe9b74-100e-4c56-8969-9fc6774ec03c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4394d73b-85f9-4c29-8fb9-30931b706ca9"
+            name="_type"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="648097be-7fb9-402a-9405-546a0bde0fce"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D_type"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ae66a691-4697-40eb-9500-e32380b7aba7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc85a67c-f9d4-4cfe-aa23-c56e6ade053b">
+                    <propertyInstance
+                      Id="8770c54c-d260-4719-a62a-55c4fe9a9928"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2bac377-5151-482b-b728-c39c55a0e5d8">
+                    <propertyInstance
+                      Id="2c991d73-5062-4561-8d93-163caf6e33a7"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a91f709-1234-45f1-9007-b0a8b7027764">
+                    <propertyInstance
+                      Id="f2fb08e2-5853-48ff-8b33-a8ce407fa448"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edbbbccc-ef0f-49f0-bffd-6458b633632e">
+                    <propertyInstance
+                      Id="45295e69-6cd7-4003-8905-77d294b39ad4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d469edc-a937-4f0a-b85c-390abbe49642">
+                    <propertyInstance
+                      Id="380d732d-701b-464c-993c-c99686bded3f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="114d4247-2363-4ea7-bac6-6973823b7d05"
+                LastKnownName="RSPlaylistType"
+                LastKnownLocation="Package6_1517.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="53396c0e-8b58-42b7-914e-1781e901648c"
+            name="addArtist"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1539f50c-af11-47d1-b4fd-16eb5062567b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddArtist OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfArtist)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="35a12164-5d92-41f8-a6c0-66ad246c41b3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71c7135d-9985-4c0a-8e69-7d2646276045">
+                    <propertyInstance
+                      Id="636ba042-dbc9-4faf-8746-d408d32d400e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7950903d-103d-4262-a211-2311b886371f">
+                    <propertyInstance
+                      Id="9d6ca3b6-de0e-45d8-9a80-0482ff6f9c55"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55a99b1e-0a5b-47f8-ac9d-f46e2046d53d">
+                    <propertyInstance
+                      Id="0cbac823-4c5d-45fc-93f5-6da89dd88b01"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c469833c-4386-46cd-a7a9-d1062deaa3ca">
+                    <propertyInstance
+                      Id="c535853c-778e-4a36-a593-b0cd064bc31b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c55c6cd-058e-41be-b8b1-d89613d8bd77">
+                    <propertyInstance
+                      Id="75788db9-c6fd-4eeb-bc67-63414fb59337"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e922a30-4368-4858-b7e3-e76bec29b49e">
+                    <propertyInstance
+                      Id="4855900e-d531-4838-977f-b92a085b3cd6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="129ac01a-40d1-4268-973b-5b1cecb044a2"
+                  name="artist"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6307306d-07fb-4210-901c-61ba9ba3feac"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddArtist OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfArtist)]) ParameterIdentifier%3Dartist"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aac55da2-d94c-415c-8e01-a733886b3e09"
+                      LastKnownName="LfArtist"
+                      LastKnownLocation="Package2_1517.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a96b3e3a-26b0-4121-b391-85dfc14856af"
+            name="addTrack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9cb4fa77-60a2-4fbb-91a4-cc2991b1c3a5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddTrack OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfTrack)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="814d56f3-d1fe-48a6-bd8a-919688e90506"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="892d31f2-be59-4361-9239-4261b4b44a58">
+                    <propertyInstance
+                      Id="421f4098-afe5-4b3c-bf04-719dc5f4c984"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adb9bd5d-f744-42f2-85f9-8c27dfa9d5d2">
+                    <propertyInstance
+                      Id="53da04a4-450a-4011-a00a-a5eb41d69877"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9265e1f-c09c-4657-b0e4-3b8580350949">
+                    <propertyInstance
+                      Id="54fa3b52-740e-4d63-81d9-73a1ad36fa2d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="834a68ce-93e7-4c86-8800-9ee9bfb43e8e">
+                    <propertyInstance
+                      Id="ec363d8b-0869-40c2-8973-405b4c76f2a7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1816a01e-f84d-4969-b77f-81b98155812a">
+                    <propertyInstance
+                      Id="ef87ba40-8082-415e-90ce-935ef54118a8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="117fef7e-16e1-46f1-8148-a5fbff666c82">
+                    <propertyInstance
+                      Id="2e73659d-8433-493d-bb0d-45e9054f22ff"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c7fe4c6-7c70-427c-a324-f5483ca0dba8"
+                  name="track"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3a295be0-fb9b-4c2d-a527-36cdf69af277"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddTrack OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfTrack)]) ParameterIdentifier%3Dtrack"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9420d9e0-c4a9-4b0c-bc92-7e055d25cb1b"
+                      LastKnownName="LfTrack"
+                      LastKnownLocation="Package2_1517.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f84bf6a-a378-4025-8161-c697e7631974"
+            name="addCandidateTracks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2f225490-c457-4484-8aab-54a8b8978bde"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddCandidateTracks OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfTrack)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fc8d0058-54ff-4bf7-a128-fb99d870c799"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="861f7c55-9fbe-4009-b94a-4c6fc25dbc6d">
+                    <propertyInstance
+                      Id="7d5b9799-6572-46a9-9539-5be01f146338"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="484cb10e-6ee0-4c6b-a0f5-4ae0ad8a8099">
+                    <propertyInstance
+                      Id="d1f14f08-afe6-45ac-b166-9a587a1428ea"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0665970-97b0-47b2-aeef-2553476efe12">
+                    <propertyInstance
+                      Id="b7e80cf3-5da8-4140-9135-71eda23126d4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9db4f02e-5e59-4711-bc57-c29712a85235">
+                    <propertyInstance
+                      Id="bf4ddcdf-0375-432b-b275-6edb3f8093dd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57339c95-6348-4255-9e5f-4ff495ad6586">
+                    <propertyInstance
+                      Id="8c3db599-52bf-44eb-aca4-9ebd97d3f565"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0544b9f-41f6-4c06-bd99-f53a5f4c8a40">
+                    <propertyInstance
+                      Id="bd43027c-ee24-4284-aef9-63618335f74b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d6ad17b-7461-4591-ac41-9aa29ea197dc"
+                  name="tracks"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b41ae080-d998-456a-bfda-8941b53c9206"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddCandidateTracks OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfTrack)]))]) ParameterIdentifier%3Dtracks"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                      LastKnownName="List&lt;LfTrack‎&gt;"
+                      LastKnownLocation="Package5_1517.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="76607c1d-8445-4ea0-b17c-168db805cabf"
+            name="addSourceTracks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fc99f80e-eacc-4c8c-a781-50981e467ac9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddSourceTracks OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfTrack)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d984246e-7b9a-456f-8371-98f995927ba5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28edf83b-406e-44cb-a2fe-419221b61dcb">
+                    <propertyInstance
+                      Id="e04b1de7-5146-4bd8-bce3-5c8fe4c08cae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76f519b7-fc7f-49fc-9e93-858088bb166c">
+                    <propertyInstance
+                      Id="e913ee9b-a53f-429e-a19a-31448ba05767"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4545cb1-e44f-41de-b144-cb5645e4cda7">
+                    <propertyInstance
+                      Id="cb029029-12de-4bd2-95d4-ef35771153bf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b4c7a22-b281-43f6-bcfe-ad8d6606e400">
+                    <propertyInstance
+                      Id="34264c71-c02f-4e96-b9f8-77b3b9c9ee9e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa899b2d-0105-4a52-88cf-a8e0d72f188a">
+                    <propertyInstance
+                      Id="1e8875f7-6855-43df-8082-d0d37181df37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf65639a-b1f4-415b-936d-6ff0850e4b8f">
+                    <propertyInstance
+                      Id="2ab71326-91d8-401d-acdd-03cfb6d0c9b5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08dff85f-a471-4b41-a606-e98097e37843"
+                  name="tracks"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7a262f47-5852-48a7-9de9-740ae3e8ace4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D(Name%3DaddSourceTracks OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.data Type%3DLfTrack)]))]) ParameterIdentifier%3Dtracks"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="696e789d-7e21-4998-bcc1-7ac6808537ee"
+                      LastKnownName="List&lt;LfTrack‎&gt;"
+                      LastKnownLocation="Package5_1517.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f9c52a66-1a44-4142-94e3-5e32970610d0"
+            name="Playlist"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="eb475879-88b9-474e-8fee-57c4f09694b6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.rs500ga Type%3DPlaylist Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="82f5634e-31d8-4ef4-8ba3-5735f68b4c21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac500f8e-ab1a-48ea-b44e-cdd3a399545a">
+                    <propertyInstance
+                      Id="8f6251a1-0841-45d1-86aa-f2e929f26c1a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="800f048f-43d3-45de-8b51-397693e3ed74">
+                    <propertyInstance
+                      Id="147f8785-1f12-4d52-86ed-e56d755e90d7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10d0bca5-70d9-4fed-bdf9-267bb7b659c8">
+                    <propertyInstance
+                      Id="6a6487ab-d6dd-4072-96b4-aedb81fa7914"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="786f8bcd-47d9-47f0-b24e-aa08d97e6404">
+                    <propertyInstance
+                      Id="f186cc6b-1a8a-472b-833c-686c41893c11"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03be4feb-e37d-417f-abe7-a8d0495a252b">
+                    <propertyInstance
+                      Id="d0f39c9d-a0c3-4661-bf7e-e736c3df445e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6db4485-a318-424e-be66-122dd1da9050">
+                    <propertyInstance
+                      Id="eadae8cb-1756-4c0f-a565-1452bc839306"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

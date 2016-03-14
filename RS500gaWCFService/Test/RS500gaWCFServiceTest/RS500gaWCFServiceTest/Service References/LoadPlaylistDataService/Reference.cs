@@ -21,6 +21,9 @@ namespace RS500gaWCFServiceTest.LoadPlaylistDataService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/sendLibrary", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/sendLibraryResponse")]
         System.Threading.Tasks.Task<string> sendLibraryAsync(string xmlcontent, string libraryTitle);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/createLibrary", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/createLibraryResponse")]
+        System.Threading.Tasks.Task<string> createLibraryAsync(string xmlcontent, string libraryTitle);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ILoadPlaylistDataService/getSongLyrics", ReplyAction="http://tempuri.org/ILoadPlaylistDataService/getSongLyricsResponse")]
         System.Threading.Tasks.Task<string> getSongLyricsAsync(string song, string artist);
         
@@ -109,6 +112,10 @@ namespace RS500gaWCFServiceTest.LoadPlaylistDataService {
         
         public System.Threading.Tasks.Task<string> sendLibraryAsync(string xmlcontent, string libraryTitle) {
             return base.Channel.sendLibraryAsync(xmlcontent, libraryTitle);
+        }
+        
+        public System.Threading.Tasks.Task<string> createLibraryAsync(string xmlcontent, string libraryTitle) {
+            return base.Channel.createLibraryAsync(xmlcontent, libraryTitle);
         }
         
         public System.Threading.Tasks.Task<string> getSongLyricsAsync(string song, string artist) {

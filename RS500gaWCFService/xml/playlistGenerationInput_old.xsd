@@ -14,11 +14,8 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element type="xs:string" name="type"/>
-                          <xs:element type="xs:integer" name="tracks_nr"/>
-                          <xs:element type="xs:integer" name="duration"/>
-                          <xs:element type="xs:boolean" name="filterByLibrary"/>
-                          <xs:element type="xs:integer" name="libraryID"/>
-                          <xs:element type="xs:boolean" name="refineWithPlaylists"/>
+                          <xs:element type="xs:byte" name="tracks_nr"/>
+                          <xs:element type="xs:byte" name="duration"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
@@ -28,7 +25,7 @@
               <xs:element name="artists">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="artist" maxOccurs="5" minOccurs="0">
+                    <xs:element name="artist" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element type="xs:string" name="name"/>
@@ -41,7 +38,7 @@
               <xs:element name="tracks">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="track" maxOccurs="5" minOccurs="0">
+                    <xs:element name="track" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element type="xs:string" name="title"/>

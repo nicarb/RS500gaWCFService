@@ -20,6 +20,9 @@ namespace RS500gaWCFService.rs500ga
         private List<LfTrack> _source_tracks = new List<LfTrack>();
         private int _lim_track_nr;
         private int _lim_duration;
+        private bool _do_lib_filtertering;
+        private bool _do_pl_refinment;
+        private int _source_lib_id;
         private string _creator_url;
         private string _url;
         private string _username;
@@ -129,6 +132,46 @@ namespace RS500gaWCFService.rs500ga
             {
                 this._lim_duration = value;
             }
+        }
+
+        //private bool _do_lib_filtertering;
+        public bool do_lib_filtertering
+        {
+            get
+            {
+                return this._do_lib_filtertering;
+            }
+            set
+            {
+                this._do_lib_filtertering = value;
+            }
+        }
+
+        //private bool _do_pl_refinment;
+        public bool do_pl_refinment
+        {
+            get
+            {
+                return this._do_pl_refinment;
+            }
+            set
+            {
+                this._do_pl_refinment = do_pl_refinment;
+            }
+        }
+        
+        //private int _source_lib_id;
+        public int source_lib_id
+        {
+            get
+            {
+                return this._source_lib_id;
+            }
+            set
+            {
+                this._source_lib_id = source_lib_id;
+            }
+
         }
 
         public DateTime date

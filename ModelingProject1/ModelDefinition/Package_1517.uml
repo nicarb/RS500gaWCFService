@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="1c133c53-e66e-4b00-b0ea-a122f1a4646d"
+  name="RS500gaWCFService"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f100e00d-77c3-49b8-8a94-c64a2b2d1e23"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRS500gaWCFService"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c24b823a-472d-4f2d-ac4c-52e340859efd"
+        LastKnownName="rs500ga"
+        LastKnownLocation="Package1_1517.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="eaa7df01-59dd-473e-a01d-9a57621cea98"
+        LastKnownName="data"
+        LastKnownLocation="Package2_1517.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="37f665bf-a465-4338-ab10-75dce53f0d69"
+        LastKnownName="RSPlaylistTypeNS"
+        LastKnownLocation="Package6_1517.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

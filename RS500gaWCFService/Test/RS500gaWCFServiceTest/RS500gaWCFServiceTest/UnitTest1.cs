@@ -283,12 +283,12 @@ namespace RS500gaWCFServiceTest
             {
 
                 Task<string> retval;
-                string title = "Resistance";
-                string artist = "Muse";
-                retval = client.getSimilarTracksLFAsync("30", title, artist, false, "");
+                string title = "Longview";
+                string artist = "Green Day";
+                retval = client.getSimilarTracksLFAsync(title, artist, "", true, "30");
                 retval.Wait();
                 string result = retval.Result;
-                Assert.AreEqual(result, "OK");
+                Assert.AreEqual(result, "done");
             }
             catch (Exception ex)
             {

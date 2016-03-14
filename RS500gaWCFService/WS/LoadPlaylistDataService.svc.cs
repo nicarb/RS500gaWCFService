@@ -273,7 +273,7 @@ namespace RS500gaWCFService
             }
             if (string.IsNullOrEmpty(retval) && tracksDic.Count > 0)
             {
-                retval = DBManager.sendDataToDb(tracksDic, libraryTitle);
+                retval = DBManager.sendLibraryToDb(tracksDic, libraryTitle);
             }
 
             return retval;
@@ -521,7 +521,7 @@ namespace RS500gaWCFService
             }
             if (string.IsNullOrEmpty(retval) && tracksDic.Count > 0)
             {
-                retval = DBManager.sendDataToDb(tracksDic, libraryTitle);
+                retval = DBManager.sendLibraryToDb(tracksDic, libraryTitle);
             }
 
             return retval;
@@ -533,7 +533,7 @@ namespace RS500gaWCFService
         /// 
         /// </summary>
         /// <param name="xmlcontent"></param>
-        /// <param name="playlistTitle"></param>
+        /// <param name="libraryTitle"></param>
         /// <returns></returns>
         public string sendPlaylist(string xmlcontent, string playlistTitle)
         {
@@ -763,7 +763,7 @@ namespace RS500gaWCFService
                 retval = funName + Constants.ERROR_LOADING + ex.Message;
             }
 
-            retval = DBManager.sendDataToDb(tracksDic, playlistTitle);
+            retval = DBManager.sendPlaylstToDb(tracksDic, playlistTitle);
             if (retval != Constants.RETVAL_MESSAGE_DONE)
                 retval = funName + retval;
 
@@ -1163,14 +1163,17 @@ namespace RS500gaWCFService
                 return funName + retval;
             }
 
-            retval = DBManager.getAlbumsIdFromDb(album);
-            if (retval != Constants.RETVAL_MESSAGE_DONE)
+            if (album.dbId == 0)
             {
-                DBLogger.logWarn(funName + retval);
-                return funName + retval;
+                retval = DBManager.getAlbumsIdFromDb(album);
+                if (retval != Constants.RETVAL_MESSAGE_DONE)
+                {
+                    DBLogger.logWarn(funName + retval);
+                    return funName + retval;
+                }
             }
 
-            if (album.artist != null)
+            if (album.artist != null && album.artist.id == 0)
             {
                 retval = updateArtistInfo(album.artist);
                 if (retval != Constants.RETVAL_MESSAGE_DONE)
@@ -1362,8 +1365,6 @@ namespace RS500gaWCFService
         {
             string retval = string.Empty;
             string funName = "generatePlaylist(string xmlcontent) - ";
-            if (string.IsNullOrEmpty(xmlcontent))
-                return funName + string.Format(Constants.ERROR_INPUT_PARAMETER_FSTR, "xmlcontent", "Empty content is passed as input");
 
             if (string.IsNullOrEmpty(xmlcontent))
                 return funName + string.Format(Constants.ERROR_INPUT_PARAMETER_FSTR, "xmlcontent", "Empty content is passed as input");
@@ -1390,16 +1391,21 @@ namespace RS500gaWCFService
                 DBLogger.logError(retv);
             }
 
-            // search for candidate artists
-            retval = DBManager.searchForCandidateArtists(playlist);
+
+            retval = DBManager.createPlaylistMatrixRelationship(playlist);
             if (retval != Constants.RETVAL_MESSAGE_DONE)
             {
                 string retv = funName + retval;
                 DBLogger.logError(retv);
             }
 
-            // 1
-            
+            retval = DBManager.computeHamiltonianPath(playlist);
+            if (retval != Constants.RETVAL_MESSAGE_DONE)
+            {
+                string retv = funName + retval;
+                DBLogger.logError(retv);
+            }
+
             // print output
             switch (playlist.type.type)
             {
@@ -1620,6 +1626,7 @@ namespace RS500gaWCFService
                     DBLogger.logError(funName + retval);
                     continue;
                 }
+                playlist.source_tracks.Add(track);
             }
 
             foreach (LfArtist artist in playlist.artists)
@@ -1656,6 +1663,7 @@ namespace RS500gaWCFService
                     continue;
                 }
 
+                List<LfTrack> rs500gaArtTopTracks = new List<LfTrack>();
                 foreach (LfTrack artTrack in artist.topTracks)
                 {
                     retval = DBManager.getTrackIdFromDb(artTrack);
@@ -1664,7 +1672,28 @@ namespace RS500gaWCFService
                         DBLogger.logError(funName + retval);
                         continue;
                     }
+                    if (playlist.do_lib_filtertering)
+                    {
+
+                        if (artTrack.id < 6500)
+                        {
+                            rs500gaArtTopTracks.Add(artTrack);
+                        }
+                    }
+                    else
+                    {
+                        rs500gaArtTopTracks.Add(artTrack);
+                    }
                 }
+
+                if (rs500gaArtTopTracks.Count > 0)
+                {
+                    Random rnd = new Random();
+                    int idx = rnd.Next(rs500gaArtTopTracks.Count);
+                    playlist.source_tracks.Add(rs500gaArtTopTracks[idx]);
+                }
+
+
             }
 
             return retval;
@@ -1767,19 +1796,23 @@ namespace RS500gaWCFService
             string funName = "getSimilarTracksLF(string limit, string track, bool doAutocorrect, string mbid) - ";
             LfTrack srcTrack = new LfTrack();
 
-            if (!string.IsNullOrEmpty(track))
-                srcTrack.name = track;
 
-            if (!string.IsNullOrEmpty(artistName))
-                srcTrack.artistName = artistName;
 
-            if (!string.IsNullOrEmpty(mbid))
-                srcTrack.mbid = mbid;
+            if (string.IsNullOrEmpty(mbid) && (string.IsNullOrEmpty(track) || string.IsNullOrEmpty(artistName))) {
+                string retStr = funName + Constants.RETVAL_MESSAGE_ERROR;
+                DBLogger.logWarn(retStr);
+                return retStr;
+            }
 
-            //LastfmMethods meths = new LastfmMethods();
-            if (string.IsNullOrEmpty(srcTrack.artistName))
-                srcTrack.artistName = artistName;
-            retval = LastfmMethods.getTrackInfo(srcTrack, false, string.Empty, string.Empty, string.Empty);
+            srcTrack.name = track;
+            srcTrack.artistName = artistName;
+
+            srcTrack.artist = new LfArtist();
+            srcTrack.artist.name = artistName;
+
+            srcTrack.mbid = mbid;
+
+            retval = LastfmMethods.getTrackInfo(srcTrack, true, string.Empty, string.Empty, string.Empty);
             if (retval != Constants.RETVAL_MESSAGE_DONE)
             {
                 DBLogger.logWarn(funName + retval);

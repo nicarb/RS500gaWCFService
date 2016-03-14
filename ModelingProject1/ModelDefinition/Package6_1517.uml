@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="37f665bf-a465-4338-ab10-75dce53f0d69"
+  name="RSPlaylistTypeNS"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="24cd9bb8-236c-42cb-af2c-a117fd76da8a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRS500gaWCFService.RSPlaylistTypeNS"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="114d4247-2363-4ea7-bac6-6973823b7d05"
+        name="RSPlaylistType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c753f970-7006-45e6-8671-7e7a934143be"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FDevelopment%2FGitHub%2FRS500gaWCFService%2FRS500gaWCFService%2Fbin%2FRS500gaWCFService.dll Namespace%3DRS500gaWCFService.RSPlaylistTypeNS Type%3DRSPlaylistType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9b87ccd4-37ec-45a5-b931-116d6b2ed0c2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ca35d64-9652-4d7b-817e-758bf11e3873">
+                <propertyInstance
+                  Id="18a0a05f-f35a-448b-8e35-d5b94a435807"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c366b4d-526e-4ed3-b400-b42a655bf0f6">
+                <propertyInstance
+                  Id="ee8a93fd-50a5-4704-a884-b31fd8070a6f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e23157a-0b6a-4731-b5ed-27eac3917b71">
+                <propertyInstance
+                  Id="401fc54e-67c9-4c61-b767-4764416d2ab4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7148027d-e2a3-4951-a079-349f091891da">
+                <propertyInstance
+                  Id="15adf824-97da-4d2c-961c-7ccc317494ab"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="773bd3f5-cb1a-47b2-b0b0-3f58b0c2af64">
+                <propertyInstance
+                  Id="2a5b7fe9-a43d-4be2-9517-a5f4d4987224"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

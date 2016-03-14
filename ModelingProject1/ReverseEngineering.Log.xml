@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-03-04T15:18:12" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'aad47306-1595-4a39-b9f2-9495743d38c6' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService' -  (Package)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data' -  (Package)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum' -  (Class)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_artist' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_artistName' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_id' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_id_artist' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_lf_id' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_mbid' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_name' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_playcount' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_rank' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_releasedate' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_tags' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_tracks' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_tracks_count' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_url' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_wiki_content' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::_wiki_summary' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::addTag' -  (Operation)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::addTag::tag' -  (Parameter)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::addTrack' -  (Operation)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::addTrack::track' -  (Parameter)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::artist' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::artistName' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::dbId' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::idArtist' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::lf_id' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::LfAlbum' -  (Operation)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::mbid' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::name' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::playcount' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::rank' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::releasedate' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::tags' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::ToString' -  (Operation)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::tracks' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::tracks_count' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::url' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::wiki_content' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfAlbum::wiki_summary' -  (Property)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfArtist' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfTag' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::RS500gaWCFService::data::LfTrack' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections' -  (Package)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;LfTag‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;LfTrack‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::DateTime' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::RS500gaWCFService::data::LfAlbum to ModelingProject1::RS500gaWCFService::data::LfArtist (Association)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::RS500gaWCFService::data::LfAlbum to ModelingProject1::System::DateTime (Association)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::RS500gaWCFService::data::LfAlbum to ModelingProject1::System::Collections::Generic::List&lt;LfTrack‎&gt; (Association)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::RS500gaWCFService::data::LfAlbum to ModelingProject1::System::Collections::Generic::List&lt;LfTag‎&gt; (Association)" />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="High" Text="(7) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2016-03-04T15:18:14" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>
